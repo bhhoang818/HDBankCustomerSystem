@@ -1,0 +1,43 @@
+header 
+    .wrap-header.d-flex.align-items-center
+        .wrap-header-left.d-flex.align-items-center
+            a.wrap-header-left_icon.d-flex.align-items-center.justify-content-center(href="") 
+                img(src="./images/icons/icons-windows.svg", alt="") 
+            a.wrap-header-left_logo(href="")
+                img(src="./images/header/logo.png", alt="")
+        .wrap-header-center 
+            .marquee 
+                .marquee-wrapper  
+                    .marquee_text.d-flex.align-items-center
+                        -for(i=0; i<6; i++)
+                            .marquee-list_item.d-flex.align-items-center
+                                span
+                                    img(src="./images/icons/fire-line.svg", alt="")
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, eaque!
+        .wrap-header-right.d-flex.align-items-center
+            .wrap-search 
+                .search-button 
+                    img(src="./images/icons/search.svg", alt="")
+                form.search-form(action="") 
+                    .form-group 
+                        input.form-control(type="text")
+                        button.btn.btn-search(type='submit')
+                            img(src="./images/icons/search.svg", alt="")
+            .wrap-list-user 
+                ul.d-flex.align-items-center 
+                    li
+                        a.username.d-flex.align-items-center(href="") 
+                            p Khoa 
+                            img(src="./images/header/avatar.jpg", alt="")
+                    li 
+                        a.infor(href="")
+                            img(src="./images/icons/info.svg", alt="") 
+                    li 
+                        a.notification(href="") 
+                            img(src="./images/icons/bell.svg", alt="")
+                            .notification_number 
+                                span 99
+                    li 
+                        a.logout(href="") 
+                            img(src="./images/icons/logout.svg", alt="")
+
