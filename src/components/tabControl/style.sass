@@ -1,0 +1,57 @@
+.header-menu
+    .tabs-menu
+        .tab-list
+            li
+                position: relative
+                width: 355px
+                height: 104px
+                padding: 0 20px
+                background: $white
+                border: 2px solid $neutral-2
+                border-radius: 8px
+                cursor: pointer
+                flex: auto
+                transition: all ease-in-out 0.3s
+                .icon
+                    width: 60px
+                    img
+                        transition: all ease-in-out .3s
+                .title-item
+                    display: flex
+                    flex-direction: column
+                    font-size: r(18px)
+                    color: $brand-grey
+                    white-space: nowrap
+                    margin-left: 24px
+                    span
+                        font-weight: 700
+                        font-size: r(28px)
+                .arrow
+                    transition: all .3s ease-in
+                    margin-left: auto
+                @media screen and ( min-width: 1025px )
+                    &:hover
+                        background: $yellow-0
+                        border: 2px solid $yellow-brand
+                        .icon
+                            img
+                                transform: scale(1.1)
+                        .arrow
+                            transform: translateX(10px)
+
+                &.active
+                    background: $yellow-0
+                    border: 2px solid $yellow-brand
+            li + li
+                margin-left: 24px
+            @media screen and ( max-width: 1440.98px )
+                li
+                    width: 293px
+                    padding: 0 10px
+                    .icon
+                        width: 50px
+                    .title-item
+                        font-size: r(14px)
+                        margin-left: 10px
+                li + li
+                    margin-left: 10px

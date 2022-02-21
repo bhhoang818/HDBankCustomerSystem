@@ -20,7 +20,24 @@ const focusContact = () => {
         })
     })
 }
+const searchBox = () => {
+    $('.search-button ').on('click', function () {
+        $('.search-container ').slideToggle();
+    })
+    $('.close-box').on('click', function () {
+        $('.search-container ').slideUp();
+    })
+}
+
+
 $(document).ready(function () {
     startMarquee();
     focusContact();
+    searchBox();
+    $("#progressbar-individualCustomer").progressbar({
+        value: 3
+    });
+    $("#progressbar-bussinessCustomer").progressbar({
+        value: 4
+    });
 })
