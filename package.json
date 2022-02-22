@@ -44,6 +44,7 @@
 		"jquery": "^3.6.0",
 		"lazysizes": "^5.3.2",
 		"plyr": "^3.5.4",
+		"remixicon": "^2.5.0",
 		"vendors": "^1.0.4"
 	},
 	"devDependencies": {

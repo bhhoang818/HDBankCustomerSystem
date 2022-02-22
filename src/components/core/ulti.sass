@@ -6,3 +6,93 @@ main
     padding-top: 61px
 section
     padding: 24px 0
+.select-hidden
+    display: none
+    visibility: hidden
+    padding-right: 10px
+.select
+    cursor: pointer
+    display: inline-block
+    position: relative
+    font-size: 16px
+    width: 115px
+    height: 32px
+    margin-right: 16px
+.select-styled
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: $white
+    padding: 8px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border: 0.5px solid $neutral-3
+    box-sizing: border-box
+    border-radius: 4px
+    font-size: 14px
+    color: $gray-2
+    &:after
+        content: "\e313"
+        font-family: Material Icons
+        font-size: 18px
+        transition: all .3s
+        color: $neutral-4
+    &:hover
+        background: rgba($color: $yellow-4, $alpha: .5)
+
+    &:active, &.active
+        background: rgba($color: $yellow-4, $alpha: .5)
+        &:after
+            transform: rotate(180deg)
+.select-options
+    display: none
+    position: absolute
+    top: 100%
+    right: 0
+    left: 0
+    z-index: 999
+    margin: 0
+    padding: 0
+    list-style: none
+    background: rgba($color: $yellow-4, $alpha: .5)
+    li
+        text-align: center
+        margin: 0
+        padding: 12px 0
+        border-top: 1px solid $white
+        &:hover,
+        &.is-selected
+            color: $white
+            background: rgba($color: $yellow-4, $alpha: .5)
+
+        &[rel="hide"]
+            display: none
+.side-bar
+    &_title
+        width: 100%
+        height: 44px
+        margin-bottom: 37px
+        background: $yellow-4
+        border-radius: 4px
+        font-weight: bold
+        font-size: 16px
+        display: flex
+        align-items: center
+        justify-content: center
+        color: $white
+    &_list
+        li
+            a
+                display: flex
+                align-items: center
+                em
+                    font-size: 18px
+                    color: $neutral-4
+                span
+                    margin-left: 20px
+                    color: $brand-grey
+        li + li
+            margin-top: 24px
