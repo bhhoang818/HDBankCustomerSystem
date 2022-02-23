@@ -10,6 +10,9 @@
             @media screen and ( max-width: 1440.98px )
                 margin-left: -8px
                 margin-right: -8px
+            @media screen and ( max-width: 1024.98px )
+                margin-left: -5px
+                margin-right: -5px
             li
                 flex: 0 0 (100% / 12 * 2.4)
                 width: 20%
@@ -52,7 +55,6 @@
                                     transform: scale(1.1)
                             .arrow
                                 transform: translateX(10px)
-
                 &.active
                     .wrapper-content
                         background: $yellow-0
@@ -67,18 +69,26 @@
                             font-size: r(14px)
                             margin-left: 12px
                 @media screen and ( max-width: 1280.98px )
-                    flex: 0 0 (100% / 12 * 4)
-                    width: 33.33333%
+                    flex: 0 0 20%
+                    width: 20%
+                    height: 80px
                     margin-bottom: 16px
-                @media screen and ( max-width: 992.98px )
-                    flex: 0 0 (100% / 12 * 6)
-                    width: 50%
-                @media screen and ( max-width: 578.98px )
                     .wrapper-content
                         .icon
                             display: none
                         .title-item
                             margin-left: 0
+                @media screen and ( max-width: 1024.98px )
+                    height: 80px
+                    padding: 0 5px
+                    .wrapper-content
+                        .title-item
+                            span
+                                font-size: 1rem
+                @media screen and ( max-width: 992.98px )
+                    flex: 0 0 (100% / 12 * 6)
+                    width: 50%
+                @media screen and ( max-width: 578.98px )
                     &:last-child
                         flex: 0 0 100%
                         width: 100%

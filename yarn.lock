@@ -622,10 +622,10 @@
     "@babel/helper-validator-identifier" "^7.15.7"
     to-fast-properties "^2.0.0"
 
-"@fancyapps/ui@^4.0.7":
-  version "4.0.11"
-  resolved "https://registry.yarnpkg.com/@fancyapps/ui/-/ui-4.0.11.tgz#16f5650839c6fbd1546bb1b5144c1b0dac1598f2"
-  integrity sha512-/FWdARBqycdNvKeYM52z19gW4OiufnNOseesKDFAH1rCPD12DRAWiO5yBBtf2o6nmHO3nJgrqNWWc48Whc6DXw==
+"@fancyapps/ui@^4.0.26":
+  version "4.0.26"
+  resolved "https://registry.yarnpkg.com/@fancyapps/ui/-/ui-4.0.26.tgz#3e3307f1c739241eb6f4ac84a2263c5312ef1862"
+  integrity sha512-BcqK/lOMQ0IbR7DUcNK6olUCaOWlEqW7Oi3qdltur87zs6doFnno5fyKv9cDMRnuH4IxudU7Cz1zRzSUfsDWJA==
 
 "@gulp-sourcemaps/identity-map@1.X":
   version "1.0.2"

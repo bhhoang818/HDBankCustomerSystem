@@ -1,0 +1,11 @@
+extends _layout.pug
+
+block var
+	- var title = 'Yêu cầu đã xử lý'
+	- var bodyClass = 'body'
+
+block main
+	include ../components/layout/search-box/index.pug
+	include ../components/tabControl/index.pug
+	include ../components/yeuCauDaXuLy/index.pug
+

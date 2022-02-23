@@ -1,4 +1,4 @@
-.created-repuest
+.section-main
     padding: 0 r(24px)
     .wrapper-container
         box-shadow: 0px 2px 16px rgba(33, 43, 54, 0.05)
@@ -44,23 +44,38 @@
                         width: 25%
                         padding: 0 12px
                         margin-bottom: 24px
+                        cursor: pointer
                         &_content
                             position: relative
                             padding: 24px
                             background: #FFFFFF
                             border: 0.5px solid #B6BEC8
                             border-radius: 8px
+                            transition: all .3s
                             .attach
                                 position: absolute
                                 top: 24px
                                 right: 24px
                             &--icon
                                 margin-bottom: 20px
+                                img
+                                    transition: all .3s
                             &--title
                                 h3
                                     font-weight: bold
                                     font-size: 20px
                                     color: $brand-grey
+                                    transition: all .3s
+                        &:hover
+                            .grid-item_content
+                                border: 0.5px solid $yellow-brand
+                                .grid-item_content--icon
+                                    img
+                                        transform: scale(1.1)
+                                .grid-item_content--title
+                                    h3
+                                        color: $yellow-brand
+
         @media screen and ( max-width: 1500.98px )
             .wrapper-right
                 &_body
