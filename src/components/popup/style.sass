@@ -1,10 +1,31 @@
 .fancybox__content>.carousel__button.is-close
-    top: 0 !important
+    top: 16px !important
+    right: 30px !important
     color: $neutral-4 !important
 .fancybox__backdrop
     background: rgba($color: #333, $alpha: .5) !important
 .popup-detail
+    max-width: 1024px !important
     display: none
     padding: 24px !important
     box-shadow: 0px 14px 40px rgba(33, 43, 54, 0.1)
     border-radius: 8px
+    .popup-header
+        padding-bottom: 15px
+        border-bottom: 1px solid #D3D8DE
+        .title
+            font-size: r(20px)
+            color: $brand-grey
+    .popup-main
+        padding-top: 40px
+        .wrap-form
+            .form-row
+                &:nth-child(3),
+                &:nth-child(7)
+                    border-bottom: 1px solid #D3D8DE
+            .form-row + .form-row
+                padding: 16px 0
+            .history-list
+                padding: 24px 0
+                margin-bottom: 24px
+                border-bottom: 1px solid #D3D8DE
