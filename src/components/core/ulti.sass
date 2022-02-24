@@ -60,6 +60,7 @@ section
     padding: 0
     list-style: none
     background: $white
+    box-shadow: 0 0 20px rgba(33,33,33,.2)
     li
         text-align: center
         margin: 0
@@ -132,7 +133,7 @@ section
         &-top
             &_title
                 font-size: 14px
-    @media screen and ( max-width: 575.98px )
+    @media screen and ( max-width: 768.98px )
         &_body
             display: flex
             &--bottom
@@ -169,16 +170,6 @@ section
                     -webkit-line-clamp: 1
                     font-size: 16px
                     color: $brand-grey
-                .status
-                    width: max-content
-                    height: 25px
-                    border-radius: 4px
-                    padding: 0 8px
-                    span
-                        white-space: nowrap
-                        font-weight: 600
-                        font-size: 14px
-                        color: $white
                 .date-time
                     span
                         font-size: 16px
@@ -199,13 +190,22 @@ section
             &:hover
                 cursor: pointer
                 background: $white
-                box-shadow: 0px 8px 6px rgba(33, 43, 54, 0.05)
+                box-shadow: 0 0 20px rgba(33,33,33,.2)
     @media screen and ( max-width: 575.98px )
         max-height: auto
         table
             overflow-x: auto
             position: relative
-
+.status
+    width: max-content
+    height: 25px
+    border-radius: 4px
+    padding: 0 8px
+    span
+        white-space: nowrap
+        font-weight: 600
+        font-size: 14px
+        color: $white
 .yellow
     background: $yellow-4
 .red
@@ -226,3 +226,37 @@ section
 hr
     clear: both
     border: 1px solid $neutral-2
+.button-bottom
+    display: flex
+    justify-content: flex-end
+    .btn
+        &-done
+            padding: 12px 24px
+            color: $neutral-4
+            background: #FFC20E
+            margin-left: 16px
+        &-handle
+            padding: 12px 16px
+            color: $neutral-4
+            border: 1px solid #B6BEC8
+            margin-left: 16px
+        &-dis
+            padding: 12px 24px
+            color: #EB2629
+            border: 1px solid #EB2629
+
+        &-done,
+        &-handle,
+        &-dis
+            font-weight: 600
+            box-sizing: border-box
+            border-radius: 4px
+    @media screen and ( max-width: 575.98px )
+        flex-direction: column
+        .btn
+            &-done,
+            &-handle,
+            &-dis
+                width: 100%
+                margin-left: 0
+                margin-bottom: 16px

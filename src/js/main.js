@@ -74,12 +74,44 @@ const customerSelect = () => {
 
     });
 }
+const handleClickSlide = () => {
+    var handleClick = $('.history-list .history-list_header');
+    var notification = $('header').find('.notification');
+    console.log(notification);
+    handleClick.on('click', () => {
+        handleClick.toggleClass('active');
+        handleClick.parent().find('.list-history').slideToggle();
+    });
+    notification.on('click', () => {
+        $('header').find('.notification-wrapper').slideToggle();
+    });
+}
 
+const tabsPanel = () => {
+    $(".tabs-list > li").on("click", function () {
+        let $panel = $(this).closest(".tabs");
+        $panel.find("li.active").removeClass("active");
+        $(this).addClass("active");
+        let panelToShow = $(this).attr("rel");
+        console.log(panelToShow);
+        $panel.find(".panel.active").fadeOut(300, showNextPanel);
+
+        function showNextPanel() {
+            $(this).removeClass("active");
+            $("#" + panelToShow).fadeIn(300, function () {
+                $(this).addClass("active").fadeIn(300);
+            });
+        }
+
+    });
+}
 $(document).ready(function () {
     startMarquee();
     focusContact();
     searchBox();
     customerSelect();
+    handleClickSlide();
+    tabsPanel();
     $("#progressbar-individualCustomer").progressbar({
         value: 3
     });

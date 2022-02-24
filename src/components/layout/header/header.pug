@@ -21,19 +21,52 @@ header
                     img(src="./images/icons/search.svg", alt="")
             .wrap-list-user 
                 ul.d-flex.align-items-center 
-                    li
+                    li.nav-item
                         a.username.d-flex.align-items-center(href="") 
                             p Khoa 
                             img(src="./images/header/avatar.jpg", alt="")
-                    li 
+                    li.nav-item 
                         a.infor(href="")
                             img(src="./images/icons/info.svg", alt="") 
-                    li 
-                        a.notification(href="") 
+                    li.nav-item 
+                        .notification 
                             img(src="./images/icons/bell.svg", alt="")
                             .notification_number 
                                 span 99
-                    li 
+                        .notification-wrapper 
+                            .tabs 
+                                .tabs-header.d-flex.align-items-center.justify-content-between 
+                                    p.title Thông báo
+                                    ul.tabs-list.d-flex.align-items-center 
+                                        li.active(rel='tab-1')
+                                            p Chưa đọc
+                                        li(rel='tab-2') 
+                                            p Đã đọc
+                                #tab-1.panel.active 
+                                    ul.panel-list 
+                                        -for(i=0; i<5; i++)
+                                            li 
+                                                .wrap-content 
+                                                    .date-time 
+                                                        span 11/12/2021
+                                                    .content.d-flex.align-items-center.justify-content-between  
+                                                        a(href="") 
+                                                            p Amet minim mollit non deserunt ullamco aliqua ...
+                                                        a(href="") 
+                                                            span Chi tiết
+                                #tab-2.panel
+                                    ul.panel-list 
+                                        -for(i=0; i<5; i++)
+                                            li 
+                                                .wrap-content 
+                                                    .date-time 
+                                                        span 11/12/2021
+                                                    .content.d-flex.align-items-center.justify-content-between 
+                                                        a(href="") 
+                                                            p Amet minim mollit non deserunt ullamco aliqua ...
+                                                        a(href="") 
+                                                            span Chi tiết
+                    li.nav-item 
                         a.logout(href="") 
                             img(src="./images/icons/logout.svg", alt="")
 
