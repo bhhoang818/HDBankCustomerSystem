@@ -32,3 +32,30 @@
                     color: #fff
                 &::before
                     width: 100%
+    &-search
+        padding: 4px 8px 4px 6px
+        width: 121px
+        height: 32px
+        background: $yellow-brand
+        border-radius: 4px
+        @media screen and ( min-width: 1025px )
+            &:hover
+                background: linear-gradient(0deg, #FFC20E 0%, #F7A30A 152.65%)
+    &-detail
+        padding: 4px 6px 4px 8px
+        background: $yellow-brand
+        border-radius: 4px
+        display: flex
+        align-items: center
+        width: max-content
+        font-weight: 600
+        font-size: 16px
+        color: $neutral-4
+        .material-icons
+            transition: all .3s
+        @media screen and ( min-width: 1025px )
+            &:hover
+                background: linear-gradient(0deg, #FFC20E 0%, #F7A30A 152.65%)
+                color: $white
+                .material-icons
+                    transform: translateX(5px)

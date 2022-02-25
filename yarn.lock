@@ -622,10 +622,10 @@
     "@babel/helper-validator-identifier" "^7.15.7"
     to-fast-properties "^2.0.0"
 
-"@fancyapps/ui@^4.0.7":
-  version "4.0.11"
-  resolved "https://registry.yarnpkg.com/@fancyapps/ui/-/ui-4.0.11.tgz#16f5650839c6fbd1546bb1b5144c1b0dac1598f2"
-  integrity sha512-/FWdARBqycdNvKeYM52z19gW4OiufnNOseesKDFAH1rCPD12DRAWiO5yBBtf2o6nmHO3nJgrqNWWc48Whc6DXw==
+"@fancyapps/ui@^4.0.26":
+  version "4.0.26"
+  resolved "https://registry.yarnpkg.com/@fancyapps/ui/-/ui-4.0.26.tgz#3e3307f1c739241eb6f4ac84a2263c5312ef1862"
+  integrity sha512-BcqK/lOMQ0IbR7DUcNK6olUCaOWlEqW7Oi3qdltur87zs6doFnno5fyKv9cDMRnuH4IxudU7Cz1zRzSUfsDWJA==
 
 "@gulp-sourcemaps/identity-map@1.X":
   version "1.0.2"
@@ -1446,6 +1446,11 @@ character-parser@^2.1.1:
   integrity sha1-x84o821LzZdE5f/CxfzeHHMmH8A=
   dependencies:
     is-regex "^1.0.3"
+
+chart.js@^3.7.1:
+  version "3.7.1"
+  resolved "https://registry.yarnpkg.com/chart.js/-/chart.js-3.7.1.tgz#0516f690c6a8680c6c707e31a4c1807a6f400ada"
+  integrity sha512-8knRegQLFnPQAheZV8MjxIXc5gQEfDFD897BJgv/klO/vtIyFFmgMXrNfgrXpbTr/XbTturxRgxIXx/Y+ASJBA==
 
 chokidar@^2.0.0:
   version "2.1.8"
@@ -5437,6 +5442,11 @@ regjsparser@^0.7.0:
   integrity sha512-A4pcaORqmNMDVwUjWoTzuhwMGpP+NykpfqAsEgI1FSH/EzC7lrN5TMd+kN8YCovX+jMpu8eaqXgXPCa0g8FQNQ==
   dependencies:
     jsesc "~0.5.0"
+
+remixicon@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/remixicon/-/remixicon-2.5.0.tgz#b5e245894a1550aa23793f95daceadbf96ad1a41"
+  integrity sha512-q54ra2QutYDZpuSnFjmeagmEiN9IMo56/zz5dDNitzKD23oFRw77cWo4TsrAdmdkPiEn8mxlrTqxnkujDbEGww==
 
 remove-bom-buffer@^3.0.0:
   version "3.0.0"

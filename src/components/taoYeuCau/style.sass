@@ -1,0 +1,160 @@
+.section-main
+    padding: 0 r(24px)
+    .wrapper-container
+        box-shadow: 0px 2px 16px rgba(33, 43, 54, 0.05)
+        border-radius: 8px
+        background: $white
+        .wrapper-left
+            padding: 18px 24px 18px 0
+            border-right: 0.5px solid $neutral-2
+        .wrapper-right
+            padding: 24px 0 24px 24px
+            width: 100%
+            &_header
+                padding-bottom: 12px
+                &--left
+                    font-weight: bold
+                    font-size: 20px
+                    color: $brand-grey
+                &--right
+                    &__select
+                        display: flex
+                        align-items: center
+                    &__sort
+                        border: 1px solid $neutral-2
+                        box-sizing: border-box
+                        border-radius: 4px
+                        a
+                            display: inline-block
+                            font-weight: 600
+                            font-size: 16px
+                            color: $neutral-4
+                            padding: 4px 16px
+                            transition: all .3s
+                            &.active,
+                            &:hover
+                                background: $yellow-brand
+            &_body
+                &--grid
+                    flex-wrap: wrap
+                    margin-left: -12px
+                    margin-right: -12px
+                    .grid-item
+                        flex: 0 0 (100% / 12 * 3)
+                        width: 25%
+                        padding: 0 12px
+                        margin-bottom: 24px
+                        cursor: pointer
+                        &_content
+                            position: relative
+                            padding: 24px
+                            background: #FFFFFF
+                            border: 0.5px solid #B6BEC8
+                            border-radius: 8px
+                            transition: all .3s
+                            .attach
+                                position: absolute
+                                top: 24px
+                                right: 24px
+                            &--icon
+                                margin-bottom: 20px
+                                img
+                                    transition: all .3s
+                            &--title
+                                h3
+                                    font-weight: bold
+                                    font-size: 20px
+                                    color: $brand-grey
+                                    transition: all .3s
+                        &:hover
+                            .grid-item_content
+                                border: 0.5px solid $yellow-brand
+                                .grid-item_content--icon
+                                    img
+                                        transform: scale(1.1)
+                                .grid-item_content--title
+                                    h3
+                                        color: $yellow-brand
+
+        @media screen and ( max-width: 1500.98px )
+            .wrapper-right
+                &_body
+                    &--grid
+                        .grid-item
+                            &_content
+                                &--title
+                                    h3
+                                        font-size: 18px
+        @media screen and ( max-width: 1440.98px )
+            .wrapper-right
+                &_body
+                    &--grid
+                        .grid-item
+                            &_content
+                                padding: 12px
+                                &--icon
+                                    margin-bottom: 12px
+                                &--title
+                                    h3
+                                        font-size: 1rem
+        @media screen and ( max-width: 1440.98px )
+            .wrapper-right
+                &_body
+                    &--grid
+                        margin-left: -8px
+                        margin-right: -8px
+                        .grid-item
+                            padding: 0 8px
+                            &_content
+                                padding: 8px
+        @media screen and ( max-width: 1240.98px )
+            .wrapper-right
+                &_body
+                    &--grid
+                        .grid-item
+                            flex: 0 0 (100% / 12 * 4)
+                            width: 25%
+        @media screen and ( max-width: 1024.98px )
+            .wrapper-right
+                &_body
+                    &--grid
+                        .grid-item
+                            &_content
+                                &--title
+                                    h3
+                                        font-size: 14px
+        @media screen and ( max-width: 992.98px )
+            .wrapper-left
+                padding: 18px 18px 18px 0
+            .wrapper-right
+                &_header
+                    flex-direction: column
+                    &--left
+                        margin-bottom: 12px
+                &_body
+                    &--grid
+                        .grid-item
+                            flex: 0 0 (100% / 12 * 6)
+                            width: 50%
+        @media screen and ( max-width: 768.98px )
+            flex-direction: column
+            .wrapper-left
+                border-right: 0.5px solid $trans
+                border-bottom: 0.5px solid $brand-grey
+            .wrapper-right
+                padding: 12px 0
+                &_header
+                    &--right
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        justify-content: center
+                        &__select
+                            margin-bottom: 12px
+        @media screen and ( max-width: 575.98px )
+            .wrapper-right
+                &_body
+                    &--grid
+                        .grid-item
+                            flex: 0 0 100%
+                            width: 100%

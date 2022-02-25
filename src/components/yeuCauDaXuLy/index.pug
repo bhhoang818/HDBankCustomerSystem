@@ -1,0 +1,202 @@
+section.section-main
+    .wrapper-container.d-flex 
+        .wrapper-left 
+            include ./sidebar.pug
+        .wrapper-right 
+            .wrapper-right_header.d-flex.align-items-center.justify-content-between 
+                form.wrapper-right_header--left(action="")
+                    .form-group 
+                        button
+                            img(src="./images/icons/search-gray.svg", alt="")
+                        input.form-control(type="text" placeholder='Tìm kiếm task')
+                .wrapper-right_header--right.d-flex.align-items-center
+                    .wrapper-right_header--right__select
+                        select#year
+                            option(value='hide') Năm
+                            option(value='2022') 2022
+                            option(value='2021') 2021
+                            option(value='2020') 2020
+                            option(value='2019') 2019
+                            option(value='2018') 2018
+                            option(value='2017') 2017
+                            option(value='2016') 2016
+                            option(value='2015') 2015
+                            option(value='2014') 2014
+                            option(value='2013') 2013
+                            option(value='2012') 2012
+                            option(value='2011') 2011
+                            option(value='2010') 2010
+                        select#mounth
+                            option(value='hide') Tháng
+                            option(value='january') Tháng 1
+                            option(value='february') Tháng 2
+                            option(value='march') Tháng 3
+                            option(value='april') Tháng 4
+                            option(value='may') Tháng 5
+                            option(value='june') Tháng 6
+                            option(value='july') Tháng 7
+                            option(value='august') Tháng 8
+                            option(value='september') Tháng 9
+                            option(value='october') Tháng 10
+                            option(value='november') Tháng 11
+                            option(value='december') Tháng 12
+                    .wrapper-right_header--right__sort 
+                        a.active(href="") Tháng 
+                        a(href="") Năm  
+            .wrapper-right_body
+                .wrap-table 
+                    table 
+                        tr(data-fancybox="popup" data-src="#popup-detail") 
+                            td 
+                                span.dot.green 
+                            td 
+                                p STK 1 tháng đến hạn, STK đảm bảo cho khoản vay của doanh nghiệp
+                            td 
+                                .status.green 
+                                    span Hoàn thành 
+                            td
+                                .date-time 
+                                    span 03/04/2022
+                            td 
+                                .user-avatar 
+                                    img(src="./images/icons/avatar.png", alt="")
+                        tr 
+                            td 
+                                span.dot.yellow 
+                            td 
+                                p STK 1 tháng đến hạn, STK đảm bảo cho khoản vay của doanh nghiệp, đã báo chuyên viên KHDN Lương Tiến Thạnh. Công ty sẽ chuyển tiền về thanh...
+                            td 
+                                .status.green 
+                                    span Hoàn thành
+                            td
+                                .date-time 
+                                    span 03/04/2022
+                            td 
+                                .user-avatar 
+                                    img(src="./images/icons/avatar.svg", alt="")
+                        tr 
+                            td 
+                                span.dot.yellow 
+                            td 
+                                p STK 1 tháng đến hạn, STK đảm bảo cho khoản vay của doanh nghiệp
+                            td 
+                                .status.green 
+                                    span Hoàn thành
+                            td
+                                .date-time 
+                                    span 03/04/2022
+                            td 
+                                .user-avatar 
+                                    img(src="./images/icons/avatar.svg", alt="")
+                        tr 
+                            td 
+                                span.dot.green 
+                            td 
+                                p STK 1 tháng đến hạn, STK đảm bảo cho khoản vay của doanh nghiệp, đã báo chuyên viên KHDN Lương Tiến Thạnh. Công ty sẽ chuyển tiền về thanh...
+                            td 
+                                .status.green 
+                                    span Hoàn thành
+                            td
+                                .date-time 
+                                    span 03/04/2022
+                            td 
+                                .user-avatar 
+                                    img(src="./images/icons/avatar.svg", alt="")
+                        tr 
+                            td 
+                                span.dot.red 
+                            td 
+                                p Chạy danh sách KH đến hạn sổ tiết kiệm trên KM
+                            td 
+                                .status.green 
+                                    span Hoàn thành
+                            td
+                                .date-time 
+                                    span 03/04/2022
+                            td 
+                                .user-avatar 
+                                    img(src="./images/icons/avatar.png", alt="")
+                        tr 
+                            td 
+                                span.dot.red 
+                            td 
+                                p STK 1 tháng đến hạn, STK đảm bảo cho khoản vay của doanh nghiệp, đã báo chuyên viên KHDN Lương Tiến Thạnh
+                            td 
+                                .status.green 
+                                    span Hoàn thành
+                            td
+                                .date-time 
+                                    span 03/04/2022
+                            td 
+                                .user-avatar 
+                                    img(src="./images/icons/avatar.png", alt="")
+                        tr 
+                            td 
+                                span.dot.green 
+                            td 
+                                p STK 1 tháng đến hạn, STK đảm bảo cho khoản vay của doanh nghiệp
+                            td 
+                                .status.green 
+                                    span Hoàn thành
+                            td
+                                .date-time 
+                                    span 03/04/2022
+                            td 
+                                .user-avatar 
+                                    img(src="./images/icons/avatar.png", alt="")
+                        tr 
+                            td 
+                                span.dot.green 
+                            td 
+                                p STK 1 tháng đến hạn, STK đảm bảo cho khoản vay của doanh nghiệp
+                            td 
+                                .status.green 
+                                    span Hoàn thành
+                            td
+                                .date-time 
+                                    span 03/04/2022
+                            td 
+                                .user-avatar 
+                                    img(src="./images/icons/avatar.png", alt="")
+                        tr 
+                            td 
+                                span.dot.green 
+                            td 
+                                p STK 1 tháng đến hạn, STK đảm bảo cho khoản vay của doanh nghiệp
+                            td 
+                                .status.green 
+                                    span Hoàn thành
+                            td
+                                .date-time 
+                                    span 03/04/2022
+                            td 
+                                .user-avatar 
+                                    img(src="./images/icons/avatar.png", alt="")
+                        tr 
+                            td 
+                                span.dot.green 
+                            td 
+                                p STK 1 tháng đến hạn, STK đảm bảo cho khoản vay của doanh nghiệp
+                            td 
+                                .status.red 
+                                    span Từ chối
+                            td
+                                .date-time 
+                                    span 03/04/2022
+                            td 
+                                .user-avatar 
+                                    img(src="./images/icons/avatar.png", alt="")
+                        tr 
+                            td 
+                                span.dot.green 
+                            td 
+                                p STK 1 tháng đến hạn, STK đảm bảo cho khoản vay của doanh nghiệp
+                            td 
+                                .status.orange 
+                                    span Đồng ý
+                            td
+                                .date-time 
+                                    span 03/04/2022
+                            td 
+                                .user-avatar 
+                                    img(src="./images/icons/avatar.png", alt="")

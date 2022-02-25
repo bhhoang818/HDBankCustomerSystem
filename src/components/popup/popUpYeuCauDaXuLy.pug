@@ -1,0 +1,103 @@
+#popup-detail.popup-detail.request-processed-popup
+    .popup-header.d-flex.align-items-center.wide 
+        h2.title Cập nhật số điện thoại
+        .status.yellow
+            span Chưa duyệt
+    .popup-main 
+        form.wrap-form.wide(action="") 
+            .row
+                .form-group.col-lg-6 
+                    label(for="") Người tạo yêu cầu:
+                    input.form-control(type="text" value='Phạm Ngọc Thanh Hương')
+                .form-group.col-lg-3 
+                    label(for="") Email:
+                    input.form-control(type="text" value='huongpnt@hdbank.com.vn')
+                .form-group.col-lg-3
+                    label(for="") Điện thoại:
+                    input.form-control(type="text" value='+84 3999 125 412')
+            .row
+                .form-group.col-lg-6
+                    label(for="") Mã Khách hàng:
+                    input.form-control(type="text" value='0123456')
+                .form-group.col-lg-3
+                    label(for="") Ngày giao việc:
+                    input.form-control(type="date" value='03/04/2022')
+                .form-group.col-lg-3
+                    label(for="") Mức độ ưu tiên:
+                    .level-light.d-flex.align-items-center
+                        span.dot.green 
+                        span.txt Thấp
+            .row 
+                .form-group.col-lg-12 
+                    label(for="") Nội dung thay đổi
+                    input.form-control(type="text" value='Cập nhật số điện thoại')
+            .row 
+                .form-group.col-lg-6
+                    label(for="") Thông tin cũ
+                    input.form-control(type="text" name="" value='+84 3999 125 412')
+                .form-group.col-lg-6
+                    label(for="") Thông tin mới 
+                    input.form-control(type="text" name="" value='+84 3999 125 412')
+            .row 
+                .form-group.col-lg-12
+                    label(for="") Các file kèm thêm
+                    table#file-upload  
+                        thead 
+                            tr 
+                                th Tên file
+                                th Loại file
+                                th Kich thước
+                                th Thao tác
+                        tr 
+                            td 
+                                .name-file Yeucau.xlsx (8Mb)
+                            td 
+                                .file-style
+                            td 
+                                .file-size 
+                            td 
+                                img(src="./images/icons/cloud-download.svg", alt="")
+            .history-list 
+                .history-list_header.d-flex.align-items-center.justify-content-between 
+                    p Lịch sử phê duyệt
+                    em.material-icons expand_more
+                .history-list_main 
+                    ul.list-history 
+                        li.active 
+                            .date-time 
+                                p.date 13/09/2020
+                                p.time 14:00
+                            .content 
+                                .title 
+                                    p HD000775 Nguyễn Tấn Lực - KCNTT-NHĐT - Đang đợi xử lý
+                                .sub-title 
+                                    p Amet minim mollit non de....
+                        li 
+                            .date-time 
+                                p.date 13/09/2020
+                                p.time 14:00
+                            .content 
+                                .title 
+                                    p HD000775 Nguyễn Tấn Lực - KCNTT-NHĐT - Đang đợi xử lý
+                                .sub-title 
+                                    p Amet minim mollit non de....
+                        li 
+                            .date-time 
+                                p.date 13/09/2020
+                                p.time 14:00
+                            .content 
+                                .title 
+                                    p HD000775 Nguyễn Tấn Lực - KCNTT-NHĐT - Đang đợi xử lý
+                                .sub-title 
+                                    p Amet minim mollit non de....
+                        li 
+                            .date-time 
+                                p.date 13/09/2020
+                                p.time 14:00
+                            .content 
+                                .title 
+                                    p HD000775 Nguyễn Tấn Lực - KCNTT-NHĐT - Đang đợi xử lý
+                                .sub-title 
+                                    p Amet minim mollit non de....
+    .button-bottom 
+        button.btn.btn-handle.gray(data-fancybox-close) Đóng

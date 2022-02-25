@@ -1,0 +1,114 @@
+#popup-detail.popup-detail
+    .popup-header.wide 
+        h2.title STK 1 tháng đến hạn, STK đảm bảo cho khoản vay của doanh nghiệp
+    .popup-main 
+        form.wrap-form.wide(action="") 
+            .row
+                .form-group.col-lg-6 
+                    label(for="") Người tạo yêu cầu:
+                    input.form-control(type="text" value='Phạm Ngọc Thanh Hương')
+                .form-group.col-lg-3 
+                    label(for="") Email:
+                    input.form-control(type="text" value='huongpnt@hdbank.com.vn')
+                .form-group.col-lg-3
+                    label(for="") Điện thoại:
+                    input.form-control(type="text" value='+84 3999 125 412')
+            .row
+                .form-group.col-lg-6
+                    label(for="") Mã Khách hàng:
+                    input.form-control(type="text" value='0123456')
+                .form-group.col-lg-3
+                    label(for="") Ngày giao việc:
+                    input.form-control(type="date" value='03/04/2022')
+                .form-group.col-lg-3
+                    label(for="") Mức độ ưu tiên:
+                    .level-light.d-flex.align-items-center
+                        span.dot.green 
+                        span.txt Thấp
+            .row 
+                .form-group.col-lg-12 
+                    label(for="") Nội dung trao đổi
+                    input.form-control(type="text" value='Khách hàng sẽ tất toán số tiền hiện tại và gửi thêm 5 tỷ, Thứ 2 ngày 14/2/2022 sẽ lên quầy ')
+            .row 
+                .form-group.col-lg-12 
+                    label(for="") Nội dung xử lý
+                    textarea.form-control(name="", cols="30", rows="10" placeholder='Khách hàng chưa mở sổ mới') Khách hàng chưa mở sổ mới
+            .row 
+                .form-group.col-lg-4.col-4
+                    input#checkbox(type="checkbox", name="")
+                    label.label-checkbox(for="checkbox") Khách hàng từ chối
+            .row 
+                .form-group.col-lg-12 
+                    label(for="") Lý do từ chối:
+                    textarea.form-control(name="", cols="30", rows="10" placeholder='Hoãn lại sang tháng 5/2022') Hoãn lại sang tháng 5/2022
+            .row 
+                .form-group.col-lg-12
+                    label(for="") Các file kèm thêm
+                    table#file-upload  
+                        thead 
+                            tr 
+                                th Tên file
+                                th Loại file
+                                th Kich thước
+                                th Thao tác
+                        tr 
+                            td 
+                                .name-file Yeucau.xlsx (8Mb)
+                            td 
+                                .file-style
+                            td 
+                                .file-size 
+                            td 
+                                img(src="./images/icons/cloud-download.svg", alt="")
+                .form-group.col-lg-12
+                    label.custom-file-label(for="") 
+                        img(src="./images/icons/cloud-upload.svg", alt="")
+                        span Upload file
+                    input.custom-file-input#customFile(type="file", name="") 
+                        
+            .history-list 
+                .history-list_header.d-flex.align-items-center.justify-content-between 
+                    p Lịch sử phê duyệt
+                    em.material-icons expand_more
+                .history-list_main 
+                    ul.list-history 
+                        li.active 
+                            .date-time 
+                                p.date 13/09/2020
+                                p.time 14:00
+                            .content 
+                                .title 
+                                    p HD000775 Nguyễn Tấn Lực - KCNTT-NHĐT - Đang đợi xử lý
+                                .sub-title 
+                                    p Amet minim mollit non de....
+                        li 
+                            .date-time 
+                                p.date 13/09/2020
+                                p.time 14:00
+                            .content 
+                                .title 
+                                    p HD000775 Nguyễn Tấn Lực - KCNTT-NHĐT - Đang đợi xử lý
+                                .sub-title 
+                                    p Amet minim mollit non de....
+                        li 
+                            .date-time 
+                                p.date 13/09/2020
+                                p.time 14:00
+                            .content 
+                                .title 
+                                    p HD000775 Nguyễn Tấn Lực - KCNTT-NHĐT - Đang đợi xử lý
+                                .sub-title 
+                                    p Amet minim mollit non de....
+                        li 
+                            .date-time 
+                                p.date 13/09/2020
+                                p.time 14:00
+                            .content 
+                                .title 
+                                    p HD000775 Nguyễn Tấn Lực - KCNTT-NHĐT - Đang đợi xử lý
+                                .sub-title 
+                                    p Amet minim mollit non de....
+            .button-bottom 
+                button.btn.btn-dis Từ chối
+                button.btn.btn-handle Chưa xử lý
+                button.btn.btn-done Hoàn thành

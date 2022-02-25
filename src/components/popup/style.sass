@@ -1,0 +1,251 @@
+.fancybox__content>.carousel__button.is-close
+    top: 16px !important
+    right: 30px !important
+    color: $neutral-4 !important
+    @media screen and ( max-width: 992.98px )
+        top: 8px !important
+        right: 8px !important
+.fancybox__backdrop
+    background: rgba($color: #333, $alpha: .5) !important
+.popup-detail
+    max-width: 1024px !important
+    display: none
+    padding: 24px !important
+    box-shadow: 0px 14px 40px rgba(33, 43, 54, 0.1)
+    border-radius: 8px
+    .popup-header
+        padding-bottom: 15px
+        border-bottom: 1px solid #D3D8DE
+        .title
+            font-size: r(20px)
+            color: $brand-grey
+        .status
+            height: 19px
+            border-radius: 4px
+            display: flex
+            align-items: center
+            margin-left: 10px
+            span
+                font-weight: 600
+                font-size: 14px
+                color: #454F5B
+    .popup-main
+        padding-top: 25px
+        .wrap-form
+            .row
+                &:nth-child(3),
+                &:nth-child(7)
+                    border-bottom: 1px solid #D3D8DE
+            .row + .row
+                padding: 8px 0
+            .form-group
+                display: flex
+                flex-direction: column
+                label
+                    margin-bottom: 8px
+                    font-weight: 600
+                    font-size: 16px
+                    color: $neutral-4
+                .form-control,
+                .level-light
+                    padding: 6px 16px
+                    background: $neutral-1
+                    opacity: 0.4
+                    border: 1px solid $neutral-2
+                    box-sizing: border-box
+                    border-radius: 4px
+                    color: $neutral-4
+                    .dot
+                        margin-right: 10px
+                .level-light
+                    opacity: 1
+                input[type='date']
+                    padding: 6px
+                textarea.form-control
+                    background: $white
+                    height: 100px
+                    color: $brand-grey
+                    opacity: 1
+                #checkbox
+                    display: none
+                .label-checkbox
+                    display: block
+                    position: relative
+                    cursor: pointer
+
+                    &::before
+                        content: "\e5ca"
+                        font-family: Material Icons
+                        font-size: 13px
+                        color: transparent
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        position: absolute
+                        width: 18px
+                        height: 18px
+                        border-radius: 4px
+                        background: $yellow-5
+                        right: 50px
+                        top: 50%
+                        transform: translateY(-50%)
+                    @media screen and ( max-width: 992.98px )
+                        &::before
+                            right: 35px
+                    @media screen and ( max-width: 575.98px )
+                        &::before
+                            right: -20px
+                .form-control
+                    &:focus
+                        outline: 0
+                #checkbox:checked + .label-checkbox::before
+                    color: $white
+                table
+                    border: solid .5px $neutral-2
+                    margin-bottom: 24px
+                    tr
+                        &:first-child
+                            th
+                                padding: 10px 16px
+                                background: $neutral-2
+                                &:last-child
+                                    text-align: centerzxa
+                        td
+                            padding: 16px
+                        &:last-child
+                            td
+                                &:last-child
+                                    text-align: center
+                .custom-file-input
+                    position: relative
+                    z-index: 2
+                    width: 204px
+                    height: 44px
+                    margin-bottom: 24px
+                    opacity: 0
+                    cursor: pointer
+
+                .custom-file-label
+                    cursor: pointer
+                    position: absolute
+                    width: 204px
+                    top: 0
+                    right: 0
+                    left: 8px
+                    z-index: 1
+                    height: 44px
+                    font-weight: 600
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    color: $neutral-4
+                    background: $yellow-4
+                    border-radius: 8px
+                    span
+                        padding-left: 18px
+            .history-list
+                padding-top: 24px
+                margin-bottom: 24px
+                border-bottom: 1px solid #D3D8DE
+                &_header
+                    padding-bottom: 32px
+                    cursor: pointer
+                    p
+                        font-weight: bold
+                        font-size: 16px
+                        color: $neutral-5
+                    .material-icons
+                        cursor: pointer
+                        transition: all .3s
+                    &.active
+                        .material-icons
+                            transform: rotate(180deg)
+                &_main
+                    .list-history
+                        display: none
+                        position: relative
+                        padding-left: 16px
+                        li
+                            position: relative
+                            margin-bottom: 24px
+                            display: flex
+                            &::before
+                                position: absolute
+                                content: ''
+                                left: -20px
+                                top: 7px
+                                width: 9px
+                                height: 9px
+                                border-radius: 50%
+                                background: #B6BEC8
+                            .date-time
+                                padding-right: 8px
+                                font-size: r(14px)
+                                color: $neutral-4
+                            .time
+                                font-size: r(14px)
+                                color: $neutral-3
+                            .content
+                                padding-left: 8px
+                                .title
+                                    p
+                                        font-weight: bold
+                                        font-size: 16px
+                                        color: $neutral-5
+                                .sub-title
+                                    p
+                                        font-size: 14px
+                                        color: #6A798C
+                            &.active
+                                &::before
+                                    background: #BE1128
+                                .content
+                                    .title
+                                        p
+                                            color: #BE1128
+                        &::before
+                            position: absolute
+                            content: ''
+                            left: 0
+                            top: 10px
+                            width: 1px
+                            height: 82%
+                            background: #D3D8DE
+    &.popup-savedraft
+        .popup-main
+            .wrap-form
+                .row
+                    &:nth-child(3),
+                    &:nth-child(7)
+                        border-bottom: 1px solid $trans
+                    &:nth-child(4)
+                        border-bottom: 1px solid #D3D8DE
+                .form-group
+                    .form-control,
+                    .level-light
+                        opacity: 1
+                        background: $white
+                    .area-code
+                        .select
+                            width: 80px
+                            height: 36px
+                            margin-right: 0
+                        .select-styled
+                            border-top-left-radius: 8px
+                            border-bottom-left-radius: 8px
+                            border-top-right-radius: 0
+                            border-bottom-right-radius: 0
+                        .form-control
+                            width: 100%
+                            height: 36px
+                            border-top-left-radius: 0
+                            border-bottom-left-radius: 0
+                            border-left: 0
+                .button-bottom
+                    padding-top: 24px
+    &.request-processed-popup
+        .popup-main
+            .wrap-form
+                .row
+                    &:nth-child(3)
+                        border-bottom: 1px solid $trans
