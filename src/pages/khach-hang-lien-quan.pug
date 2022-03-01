@@ -1,0 +1,10 @@
+extends _layout.pug
+
+block var
+	- var title = 'Khách hàng liên quan'
+	- var bodyClass = 'body'
+
+block main
+	include ../components/layout/search-box/index.pug
+	include ../components/khachHangLienQuan/index.pug
+	include ../components/popup/popUpInFo.pug

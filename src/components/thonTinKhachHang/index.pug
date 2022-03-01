@@ -1,0 +1,146 @@
+section.info-customer-page 
+    .wrapper-container.d-flex
+        .wrap-left 
+            .info-wrapper
+                .info-general 
+                    .img
+                        img(src="./images/info-custome/avatar.png", alt="")
+                    .customer-name 
+                        p Nguyễn Anh Khoa
+                    .customer-core 
+                        p Mã Khách hàng:
+                        span 00169235
+                .info-detail 
+                    table 
+                        tr 
+                            td Hạng Premier:
+                            td VIP
+                        tr 
+                            td Điểm XHTD:
+                            td 100
+                        tr 
+                            td Số GTTT:
+                            td 
+                                span 02546987 (CMND)
+                        tr 
+                            td Ngày sinh:
+                            td 12/10/1961
+                        tr 
+                            td Tuổi - Giới tính:
+                            td 30 - Nam
+                        tr 
+                            td Chỗ ở hiện tại:
+                            td 174 Phan Đăng Lưu, Phường 3, Quận Phú Nhuận, Tp.Hồ Chí Minh
+                        tr 
+                            td Số điện thoại:
+                            td *******999
+                        tr 
+                            td Email:
+                            td anv@gmail.com
+                        tr 
+                            td Giấy tờ khác:
+                            td 
+                                a(href="javascript:;" data-fancybox="info-popup" data-src="#popup-infor")  Chi tiết
+                        tr 
+                            td Trình độ học vấn:
+                            td Đại học
+                        tr 
+                            td Nghề nghiêp:
+                            td Giám đốc Marketing
+                        tr 
+                            td Tình trạng hôn nhân:
+                            td Đã kết hôn
+                        tr 
+                            td Đơn vị mở CIF:
+                            td --
+                        tr 
+                            td Ngày mở CIF:
+                            td 12/10/2000
+                a.btn.btn-login(href="") 
+                    em.material-icons format_list_bulleted
+                    span Các yêu cầu cần xử lý (02)
+        
+        .wrap-right 
+            .wrap-right_container
+                ul.d-flex.align-items-center
+                    li.active
+                        a(href='thong-tin-khach-hang.html') Thông tin tổng hợp
+                    li
+                        a(href='khach-hang-lien-quan.html') Khách hàng liên quan
+                .wrap-right_container--content
+                    .content-top.d-flex.align-items-center.justify-content-between
+                        .wrap-left
+                            .wrapper-content
+                                .title.d-flex.align-items-center
+                                    p Tổng có
+                                    a(href="") Chi tiết
+                                .chart-wrapper.d-flex.align-items-center
+                                    .chart-content
+                                        canvas#myChart1(style="width:100%;max-width:196px")
+                                    ul.list-chart 
+                                        li.d-flex.align-items-center 
+                                            span.dot.red
+                                            span Tài khoản Thanh toán
+                                        li.d-flex.align-items-center 
+                                            span.dot.orange
+                                            span Thẻ trả trước
+                                        li.d-flex.align-items-center 
+                                            span.dot.yellow
+                                            span Trái phiếu
+                        .wrap-right
+                            .wrapper-content 
+                                .title.d-flex.align-items-center.justify-centent-between 
+                                    p Tổng có
+                                    a(href="") Chi tiết
+                                .chart-wrapper.d-flex.align-items-center
+                                    .chart-content
+                                        canvas#myChart2(style="width:100%;max-width:196px")
+                                    ul.list-chart 
+                                        li.d-flex.align-items-center 
+                                            span.dot.red
+                                            span Tài khoản Thanh toán
+                                        li.d-flex.align-items-center 
+                                            span.dot.orange
+                                            span Thẻ trả trước
+                                        li.d-flex.align-items-center 
+                                            span.dot.yellow
+                                            span Trái phiếu
+                                .count-number 
+                                    a(href="") Nhóm nợ:
+                                        span 1
+                                    a(href="") Xếp hạng:
+                                        span 5
+                    
+                    .content-bottom
+                        .title 
+                            p Dịch vụ trực tuyến & Sản phẩm
+                        .list-form-check.green-0.d-flex.align-items-center
+                            .form-check
+                                .form-group
+                                    input#checkInternetBanking.form-control(type='checkbox' value='')
+                                    label.form-label(for='checkInternetBanking') Internet Banking
+                            .form-check
+                                .form-group.d-flex.align-items-center
+                                    input#checkSMSBanking.form-control(type='checkbox' value='')
+                                    label.form-label(for='checkSMSBanking') SMS Banking
+                                    a(href="") Đăng ký
+                            .form-check
+                                .form-group
+                                    input#checkMobileBanking.form-control(type='checkbox' value='')
+                                    label.form-label(for='checkMobileBanking') Mobile Banking
+                        .list-form-check.d-flex.align-items-center
+                            .form-check 
+                                .form-group.orange-0.d-flex.align-items-cente
+                                    input#checkCard.form-control(type='checkbox' value='')
+                                    label.form-label(for='checkCard') Thẻ
+                                    a(href="") Đăng ký
+                            .form-check 
+                                .form-group.red-1.d-flex.align-items-cente
+                                    input#checkInsurance.form-control(type='checkbox' value='')
+                                    label.form-label(for='checkInsurance') Bảo hiểm nhân thọ
+                            .form-check 
+                                .form-group.blue-1.d-flex.align-items-cente
+                                    input#checkPromotion.form-control(type='checkbox' value='')
+                                    label.form-label(for='checkPromotion') Chương trình khuyến mãi
+                                    a(href="") Đăng ký
+

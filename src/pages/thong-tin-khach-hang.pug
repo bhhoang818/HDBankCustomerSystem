@@ -1,0 +1,11 @@
+extends _layout.pug
+
+block var
+	- var title = 'Thông tin khách hàng'
+	- var bodyClass = 'body'
+
+block main
+	include ../components/layout/search-box/index.pug
+	include ../components/thonTinKhachHang/index.pug
+	include ../components/thonTinKhachHang/table.pug
+	include ../components/popup/popUpInFo.pug
