@@ -2,28 +2,53 @@
     .popup-header.wide
         h2.title Giấy tờ liên quan
     .popup-main
-        .swiper.gallery-top
-            .swiper-wrapper
-                .swiper-slide
-                    img(src='./images/info-custome/avatar-big.jpg')
-                .swiper-slide
-                    img(src='./images/info-custome/id-card.jpg')
-                .swiper-slide
-                    img(src='./images/info-custome/id-card-back.jpg')
-                .swiper-slide
-                    img(src='./images/info-custome/car-card.jpg')
+        .gallery-top
+            .swiper
+                .swiper-wrapper
+                    .swiper-slide
+                        .slide-inner
+                            img(src='./images/info-custome/avatar-big.jpg')
+                    .swiper-slide
+                        .slide-inner
+                            img(src='./images/info-custome/id-card.jpg')
+                    .swiper-slide
+                        .slide-inner
+                            img(src='./images/info-custome/id-card-back.jpg')
+                    .swiper-slide
+                        .slide-inner
+                            img(src='./images/info-custome/car-card.jpg')
+                    //- .swiper-slide
+                    //-     .slide-inner
+                    //-         img(src='./images/info-custome/uplaod.jpg')
             .swiper-button-next
             .swiper-button-prev
-        .swiper.gallery-thumbnail(thumbsslider='')
-            .swiper-wrapper
-                .swiper-slide
-                    img(src='./images/info-custome/avatar-big.jpg')
-                .swiper-slide
-                    img(src='./images/info-custome/id-card.jpg')
-                .swiper-slide
-                    img(src='./images/info-custome/id-card-back.jpg')
-                .swiper-slide
-                    img(src='./images/info-custome/car-card.jpg')
+        .gallery-thumbnail
+            .swiper(thumbsslider='')
+                .swiper-wrapper
+                    .swiper-slide
+                        .slide-inner
+                            img(src='./images/info-custome/avatar-big.jpg')
+                    .swiper-slide
+                        .slide-inner
+                            img(src='./images/info-custome/id-card.jpg')
+                    .swiper-slide
+                        .slide-inner
+                            img(src='./images/info-custome/id-card-back.jpg')
+                    .swiper-slide
+                        .slide-inner
+                            img(src='./images/info-custome/car-card.jpg')
+                    //- .swiper-slide
+                    //-     .slide-inner
+                    //-         img(src='./images/info-custome/uplaod.jpg')
+    .button-bottom
+        .wrap-left  
+            label.custom-file-label(for="") 
+                em.material-icons add_photo_alternate
+                span Thêm hình ảnh
+            input#upload-input.custom-file-input(type="file", name="") 
+        .wrap-right 
+            button.btn.btn-handle.gray(data-fancybox-close) Hủy
+            button.btn.btn-done.yellow(data-fancybox-close) Lưu
 
 
 

@@ -1,0 +1,171 @@
+section.info-customer-page 
+    .wrapper-container.d-flex
+        .wrap-left 
+            .info-wrapper
+                .info-general 
+                    .img
+                        img(src="./images/info-custome/avatar-bussiness.jpg", alt="")
+                    .customer-name 
+                        p ASH Logistics.LLC
+                        p Tony Nguyen
+                    .customer-core 
+                        p Mã Khách hàng:
+                        span 00169235
+                .info-detail 
+                    table 
+                        tr 
+                            td Mã số thuế:
+                            td 012345678923
+                        tr 
+                            td Giấy chứng nhận ĐKKD:
+                            td 
+                                a(href="javascript:;" data-fancybox="info-popu-1" data-src="#popup-infor" data-touch="false")  Xem hình ảnh
+                        tr 
+                            td Ngành nghề KD:
+                            td Vận tải
+                        tr 
+                            td Loại hình DN:
+                            td Công ty TNHH
+                        tr 
+                            td Loại KH:
+                            td VIP
+                        tr 
+                            td Người đại diện:
+                            td Trần Anh Vũ
+                        tr 
+                            td Số điện thoại:
+                            td *******999
+                        tr 
+                            td Email:
+                            td anv@gmail.com
+                        tr 
+                            td Giấy tờ khác:
+                            td 
+                                a(href="javascript:;")  Chi tiết
+                        tr 
+                            td Trình độ học vấn:
+                            td Đại học
+                        tr 
+                            td Nghề nghiêp:
+                            td Giám đốc Marketing
+                        tr 
+                            td Tình trạng hôn nhân:
+                            td Đã kết hôn
+                        tr 
+                            td Đơn vị mở CIF:
+                            td --
+                        tr 
+                            td Ngày mở CIF:
+                            td 12/10/2000
+                a.btn.btn-login(href="") 
+                    em.material-icons format_list_bulleted
+                    span Các yêu cầu cần xử lý (02)
+        
+        .wrap-right 
+            .wrap-right_container
+                ul.nav.d-flex.align-items-center
+                    li.active
+                        a(href='thong-tin-khach-hang-doanh-nghiep.html') Thông tin tài chính
+                    li
+                        a(href='thong-tin-tai-chinh-chi-tiet.html') Thông tin chi tiết
+                    li
+                        a(href='') Các yêu cầu xử lý (02)
+                .wrap-right_container--content
+                    .content-top.d-flex.align-items-center.justify-content-between
+                        .wrap-left
+                            .wrapper-content
+                                .title.d-flex.align-items-center
+                                    p Tổng có
+                                    a(href="") Chi tiết
+                                .chart-wrapper.d-flex.align-items-center
+                                    .chart-content
+                                        canvas#myChart3(style="width:100%;max-width:196px")
+                                    ul.list-chart 
+                                        li.d-flex.align-items-center 
+                                            span.dot.red
+                                            span TK thanh toán
+                                        li.d-flex.align-items-center 
+                                            span.dot.orange
+                                            span Tiền gửi có kỳ hạn
+                                        li.d-flex.align-items-center 
+                                            span.dot.yellow
+                                            span Tiền gửi ký quỹ
+                                        li.d-flex.align-items-center 
+                                            span.dot.green
+                                            span Trái phiếu
+                                .count-number.d-flex.align-items-center.justify-content-center
+                                    a(href="") TKTT&nbsp;
+                                        span VNĐ
+                                    a(href="") Ngoại tệ:&nbsp;
+                                        span USD
+                        .wrap-right
+                            .wrapper-content 
+                                .title.d-flex.align-items-center.justify-centent-between 
+                                    p Tổng nợ
+                                    a(href="") Chi tiết
+                                .chart-wrapper.d-flex.align-items-center
+                                    .chart-content
+                                        canvas#myChart4(style="width:100%;max-width:196px")
+                                    ul.list-chart 
+                                        li.d-flex.align-items-center 
+                                            span.dot.red
+                                            span Hợp đồng vay
+                                        li.d-flex.align-items-center 
+                                            span.dot.orange
+                                            span Thấu chi
+                                        li.d-flex.align-items-center 
+                                            span.dot.yellow
+                                            span Thẻ tin dụng
+                                
+                    
+                    .content-bottom
+                        .wrapper-content.d-flex.align-items-center
+                            .left-box
+                                .title
+                                    p TOI
+                                ul.content-progress.d-flex.align-items-center
+                                    li
+                                        p Thu huy động
+                                        label(for='') +25.5%
+                                        .progress
+                                            .progress-bar.yellow-4(data-progress='26' style="width:0;")
+                                    li
+                                        p Thu cho vay
+                                        label(for='') -15%
+                                        .progress
+                                            .progress-bar.orange(data-progress='15' style="width:0;")
+                                    li
+                                        p Thu dịch vụ
+                                        label(for='') +25%
+                                        .progress
+                                            .progress-bar.green(data-progress='25' style="width:0;")
+                                .total.text-center
+                                    label(for="") Tổng thu
+                                    p +93,25%
+                            .right-box.d-flex 
+                                .title 
+                                    p Tài trợ thương mại
+                                    a.btn.btn-login(href="") 
+                                        span Xem chi tiết
+                                        em.material-icons navigate_next
+                                ul.list-items.d-flex
+                                    li 
+                                        .icons 
+                                            img(src="./images/icons/chart-line.svg", alt="")
+                                        .content 
+                                            span LC trả ngay
+                                            p 15
+                                    li 
+                                        .icons 
+                                            img(src="./images/icons/register.svg", alt="")
+                                        .content 
+                                            span LC trả chậm
+                                            p 5
+                                    li 
+                                        .icons 
+                                            img(src="./images/icons/folder-In.svg", alt="")
+                                        .content 
+                                            span Nhờ thu
+                                            p 5
+
+

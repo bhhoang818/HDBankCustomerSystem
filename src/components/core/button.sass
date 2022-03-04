@@ -65,3 +65,49 @@
                 color: $white
                 .material-icons
                     transform: translateX(5px)
+    &-upload
+        display: flex
+        align-items: center
+        padding: 12px 24px
+        color: $neutral-4
+        background: $yellow-brand
+        border-radius: 4px
+        span
+            font-size: 16px
+            font-weight: 600
+            margin-left: 16px
+        &:hover
+            background: linear-gradient(0deg,#ffc20e,#f7a30a 152.65%)
+    &:focus
+        outline: none !important
+.custom-file-input
+    position: relative
+    z-index: 2
+    width: 204px
+    height: 44px
+    margin-bottom: 24px
+    opacity: 0
+    cursor: pointer
+    &:hover
+        background: linear-gradient(0deg,#ffc20e,#f7a30a 152.65%)
+
+.custom-file-label
+    cursor: pointer
+    position: absolute
+    width: 204px
+    top: 0
+    right: 0
+    left: 8px
+    z-index: 1
+    height: 44px
+    font-weight: 600
+    display: flex
+    align-items: center
+    justify-content: center
+    color: $neutral-4
+    background: $yellow-4
+    border-radius: 8px
+    span
+        padding-left: 18px
+    &:hover
+        background: linear-gradient(0deg,#ffc20e,#f7a30a 152.65%)

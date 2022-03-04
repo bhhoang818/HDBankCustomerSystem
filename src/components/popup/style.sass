@@ -7,6 +7,12 @@
         right: 8px !important
 .fancybox__backdrop
     background: rgba($color: #333, $alpha: .5) !important
+.fancybox__carousel.is-draggable .fancybox__slide, .fancybox__carousel.is-draggable .fancybox__slide .fancybox__content
+    cursor: initial !important
+.fancybox__slide
+    overflow: unset !important
+.fancybox__content :focus:not(.carousel__button.is-close)
+    outline: none !important
 .popup-detail
     max-width: 1024px !important
     display: none
@@ -116,33 +122,6 @@
                             td
                                 &:last-child
                                     text-align: center
-                .custom-file-input
-                    position: relative
-                    z-index: 2
-                    width: 204px
-                    height: 44px
-                    margin-bottom: 24px
-                    opacity: 0
-                    cursor: pointer
-
-                .custom-file-label
-                    cursor: pointer
-                    position: absolute
-                    width: 204px
-                    top: 0
-                    right: 0
-                    left: 8px
-                    z-index: 1
-                    height: 44px
-                    font-weight: 600
-                    display: flex
-                    align-items: center
-                    justify-content: center
-                    color: $neutral-4
-                    background: $yellow-4
-                    border-radius: 8px
-                    span
-                        padding-left: 18px
             .history-list
                 padding-top: 24px
                 margin-bottom: 24px
@@ -211,6 +190,68 @@
                             width: 1px
                             height: 82%
                             background: #D3D8DE
+        .wrap-table
+            padding-right: 16px
+            padding-bottom: 24px
+            min-height: unset
+            overflow: auto
+            table
+                width: 100%
+                tr
+                    th
+                        padding: 10px 16px
+                        background: $neutral-1
+                        border-top: 1px solid $neutral-2
+                        .title
+                            display: flex
+                            align-items: center
+                            span
+                                white-space: nowrap
+                                &:last-child
+                                    margin-left: 10px
+                        &:first-child
+                            border-left: 1px solid $neutral-2
+                        &:last-child
+                            border-right: 1px solid $neutral-2
+                    td
+                        text-align: center
+                        padding: 16px
+                        white-space: nowrap
+                        &:first-child
+                            border-left: 1px solid $neutral-2
+                        &:last-child
+                            border-right: 1px solid $neutral-2
+    .button-bottom
+        margin-top: 24px
+        padding-top: 16px
+        display: flex
+        justify-content: flex-end
+        border-top: 1px solid $neutral-2
+        .btn
+            &-done
+                padding: 12px 24px
+                color: $neutral-4
+                background: #FFC20E
+                margin-left: 16px
+            &-handle
+                padding: 12px 16px
+                color: $neutral-4
+                border: 1px solid #B6BEC8
+                margin-left: 16px
+            &-dis
+                padding: 12px 24px
+                color: #EB2629
+                border: 1px solid #EB2629
+
+            &-done,
+            &-handle,
+            &-dis
+                font-weight: 600
+                box-sizing: border-box
+                border-radius: 4px
+        .wrap-left
+            position: relative
+            margin-right: auto
     &.popup-savedraft
         .popup-main
             .wrap-form
@@ -249,3 +290,63 @@
                 .row
                     &:nth-child(3)
                         border-bottom: 1px solid $trans
+    &.popup-infor
+        min-width: 1024px
+        .popup-main
+            padding-bottom: 40px
+            .gallery-top
+                position: relative
+                max-width: 608px
+                width: 100%
+                margin: 0 auto
+                margin-bottom: 30px
+                padding-bottom: 16px
+                .swiper-slide
+                    .slide-inner
+                        cursor: pointer
+                        +img-ratio(360/608)
+                        border-radius: 8px
+                        img
+                            border-radius: 8px
+                .swiper-button-next
+                    right: -58px
+                    &::after
+                        content: '\e315'
+                .swiper-button-prev
+                    left: -58px
+                    &::after
+                        content: '\e314'
+                .swiper-button-next,
+                .swiper-button-prev
+                    width: 44px
+                    height: 44px
+                    border-radius: 50%
+                    background: #FFFFFF
+                    box-shadow: 0px 14px 40px rgba(33, 43, 54, 0.1)
+                    &:focus
+                        outline: none
+                    &::after
+                        font-family: Material Icons
+                        color: $neutral-4
+            .gallery-thumbnail
+                max-width: 608px
+                margin: 0 auto
+                position: relative
+                .swiper-slide
+                    .slide-inner
+                        cursor: pointer
+                        +img-ratio(100/100)
+                        border-radius: 8px
+                        border: 2px solid $trans
+                        box-sizing: border-box
+                        transition: all .3s
+                        img
+                            border-radius: 8px
+                    &-thumb-active
+                        .slide-inner
+                            border: 2px solid $yellow-brand
+        .button-bottom
+            padding-top: 24px
+            border-top: 1px solid #D3D8DE
+    &.popup-transaction
+        max-width: 1240px !important

@@ -7,6 +7,7 @@
             width: 25%
             .info-wrapper
                 width: 100%
+                height: 100%
                 padding: 16px 16px 24px 16px
                 background: #FFFFFF
                 box-shadow: 0px 2px 16px rgba(33, 43, 54, 0.05)
@@ -79,7 +80,7 @@
                 background: #FFFFFF
                 box-shadow: 0px 2px 16px rgba(33, 43, 54, 0.05)
                 border-radius: 8px
-                ul
+                ul.nav
                     padding-bottom: 16px
                     li
                         cursor: pointer
@@ -118,7 +119,7 @@
                             .wrapper-content
                                 background: #F8F9FA
                                 border-radius: 8px
-                                height: 315px
+                                height: 330px
                                 padding: 16px
                                 .title
                                     margin-bottom: 30px
@@ -223,6 +224,146 @@
                                     padding-left: 0
                                 &:last-child
                                     padding-right: 0
+                        .wrapper-content
+                            width: 100%
+                            .left-box
+                                width: 33.54792560801144%
+                                border-radius: 8px
+                                background: #FFF0E5
+                                .content-progress
+                                    padding-bottom: 16px
+                                    border-bottom: 1px solid #D3D8DE
+                                    flex-wrap: wrap
+                                    justify-content: center
+                                    li
+                                        flex: 0 0 1
+                                        width: 117px
+                                        text-align: center
+                                        p
+                                            text-align: center
+                                            color: #454F5B
+                                        label
+                                            padding-bottom: 8px
+                                            font-weight: bold
+                                            font-size: 20px
+                                            text-align: center
+                                            color: #212B36
+                                    li + li
+                                        margin-left: 32px
+                                .total
+                                    padding-top: 16px
+
+                                    label
+                                        color: #454F5B
+                                    p
+                                        font-weight: bold
+                                        font-size: 20px
+                                        color: $neutral-5
+                                @media screen and ( max-width: 1280.98px )
+                                    width: 50%
+                                    .content-progress
+                                        li + li
+                                            margin-left: 16px
+                            .right-box
+                                width: calc( 100% - 33.54792560801144% )
+                                margin-left: 16px
+                                border: 1px solid #B6BEC8
+                                box-sizing: border-box
+                                border-radius: 8px
+                                background-image: url('../images/info-custome/bg-chart.svg')
+                                background-repeat: no-repeat
+                                background-position: bottom
+                                .list-items
+                                    padding-top: 30px
+                                    margin: 0 auto
+                                    li
+                                        .icons
+                                            width: 55px
+                                            height: 55px
+                                            display: flex
+                                            align-items: center
+                                            justify-content: center
+                                            border-radius: 50%
+                                            margin: 0 auto
+
+                                        .content
+                                            span
+                                                padding-top: 24px
+                                                font-weight: bold
+                                                font-size: 20px
+                                                color: #454F5B
+                                                white-space: nowrap
+                                                text-align: center
+                                                display: block
+                                            p
+                                                font-weight: bold
+                                                font-size: 32px
+                                                text-align: center
+                                                padding-bottom: 20px
+                                        &:nth-child(1)
+                                            .icons
+                                                background: #FDE8E8
+                                            .content
+                                                p
+                                                    color: #BE1128
+
+                                        &:nth-child(2)
+                                            .icons
+                                                background: #FFF0E5
+                                            .content
+                                                p
+                                                    color: #F56600
+                                        &:nth-child(3)
+                                            .icons
+                                                background: #F2FAE2
+                                            .content
+                                                p
+                                                    color: #7DBA00
+                                    li + li
+                                        margin-left: 82px
+                                @media screen and ( max-width: 1280.98px )
+                                    width: 50%
+                                    flex-direction: column
+                                    justify-content: center
+                                    align-items: center
+                                    .title
+                                        .btn-login
+                                            margin: 0 auto
+                                    .list-items
+                                        padding-top: 0
+                                        li
+                                            .content
+                                                span
+                                                    font-size: 16px
+                                                p
+                                                    font-size: 24px
+                                                span,
+                                                p
+                                                    padding: 0
+                                        li + li
+                                            margin-left: 30px
+                            .left-box,
+                            .right-box
+                                height: 230px
+                                padding: 16px 16px 12px 16px
+                                .title
+                                    p
+                                        padding-bottom: 24px
+                                        font-weight: bold
+                                        font-size: 20px
+                                        color: #212B36
+                                    .btn-login
+                                        width: max-content
+                                        display: flex
+                                        align-items: center
+                                        justify-content: center
+                                        padding: 12px 16px
+                                @media screen and ( max-width: 1280.98px )
+                                    .title
+                                        p
+                                            padding-bottom: 8px
+                                        .btn-login
+                                            padding: 4px 16px
 
         @media screen and ( max-width: 1280.98px )
             .wrap-left
@@ -256,181 +397,3 @@
                                             font-size: 14px
                                         a
                                             font-size: 14px
-.table-sec
-    .panel
-        .wrapper-header
-            .wrap-left
-                .count-money
-                    p
-                        margin-right: 24px
-                        font-size: 16px
-                        color: $neutral-4
-                        span
-                            font-weight: 700
-            .wrap-right
-                margin-left: auto
-                .select-box
-                    width: 142px
-                    height: 36px
-                    background: $white
-                    border: 1px solid #D3D8DE
-                    box-sizing: border-box
-                    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.03)
-                    border-radius: 4px
-                    position: relative
-                    .dot
-                        position: absolute
-                        top: 50%
-                        left: 10px
-                        transform: translateY(-50%)
-                    .select
-                        width: 100%
-                        height: 100%
-                        padding: 0
-                        margin: 0
-
-                        .select-styled
-                            width: 100%
-                            height: 100%
-                            border: 0
-                            padding: 0
-                            justify-content: center
-                            background: $trans
-                            padding-left: 30px
-                            padding-right: 10px
-                            &::after
-                                margin-left: auto
-                .search-box
-                    margin-left: 16px
-                    form
-                        .form-group
-                            width: 292px
-                            height: 36px
-                            background: $white
-                            border: 1px solid #D3D8DE
-                            box-sizing: border-box
-                            box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.03)
-                            border-radius: 4px
-                            position: relative
-                            padding: 8px 10px
-                            .form-control
-                                width: 100%
-                                height: 100%
-                                border: 0
-                                background: $trans
-                                padding-left: 30px
-                            .icon
-                                position: absolute
-                                top: 50%
-                                left: 10px
-                                transform: translateY(-50%)
-        .wrapper-body
-            width: 100%
-            overflow: auto
-            padding-bottom: 24px
-            padding-top: 16px
-            margin-bottom: 16px
-            table
-                width: 100%
-                tr
-                    th
-                        text-align: center
-                        padding: 16px
-                        white-space: nowrap
-                        cursor: pointer
-                        background: $neutral-1
-                        .title
-                            position: relative
-                            justify-content: center
-                            display: flex
-                            align-items: center
-                            span
-                                font-size: 16px
-                                color: $neutral-4
-                                font-weight: 600
-                                &:first-child
-                                    padding-right: 8px
-                            span + span
-                                width: 10px
-                        &:first-child
-                            position: -webkit-sticky
-                            position: sticky
-                            left: 0
-                            z-index: 2
-                            border-right: 1px solid $neutral-3
-                            box-shadow: 0px 2px 16px rgba(33, 43, 54, 0.05)
-
-                    td
-                        text-align: center
-                        padding: 16px
-                        background: $white
-                        border-top: 1px solid $neutral-3
-                        white-space: nowrap
-                        color: $neutral-4
-                        position: relative
-                        &:first-child
-                            position: -webkit-sticky
-                            position: sticky
-                            left: 0
-                            z-index: 2
-                            border-right: 1px solid $neutral-3
-                            box-shadow: 0px 2px 16px rgba(33, 43, 54, 0.05)
-                        &:nth-child(2)
-                            span
-                                color: $blue-4
-                                font-weight: 600
-                        .form-control
-                            position: absolute
-                            top: 50%
-                            left: 50%
-                            transform: translate(-50%, -50%)
-                            z-index: 2
-                            opacity: 0
-                            cursor: pointer
-                            width: 18px
-                            height: 18px
-                        input#checkbox:checked ~ .form-label::before
-                            color: $neutral-4
-                            background: $yellow-5
-                            border: 0
-                        .form-label
-                            display: block
-                            position: relative
-                            cursor: pointer
-
-                            &::before
-                                content: "\e5ca"
-                                font-family: Material Icons
-                                font-size: 16px
-                                color: transparent
-                                display: flex
-                                justify-content: center
-                                align-items: center
-                                position: absolute
-                                width: 18px
-                                height: 18px
-                                background: $white
-                                border: 1px solid $neutral-2
-                                box-sizing: border-box
-                                border-radius: 4px
-                                left: 50%
-                                top: 50%
-                                transform: translate(-50%, -50%)
-
-            &::-webkit-scrollbar-track
-                box-shadow: inset 0 0 6px rgba(255, 255, 255, 0)
-                background-color: #f5f5f5
-                border-radius: 20px
-            &::-webkit-scrollbar
-                width: 8px
-                height: 8px
-            &::-webkit-scrollbar-thumb
-                border-radius: 3px
-                box-shadow: inset 0 0 6px rgba(255, 255, 255, 0)
-                background-color: $neutral-2
-        .pagination-nav
-            p
-                font-size: 1rem
-                color: $neutral-4
-            .pagination
-                margin-left: auto

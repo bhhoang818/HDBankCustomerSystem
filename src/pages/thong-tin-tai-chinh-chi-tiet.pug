@@ -1,0 +1,10 @@
+extends _layout.pug
+
+block var
+	- var title = 'Thông tin chi tiết'
+	- var bodyClass = 'body'
+
+block main
+	include ../components/layout/search-box/index.pug
+	include ../components/thongTinDoanhNghiep/thongTinChiTiet.pug
+	include ../components/popup/popUpInFo.pug

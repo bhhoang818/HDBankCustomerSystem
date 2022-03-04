@@ -5,15 +5,13 @@ section.table-sec
                 li.active
                     a(href='#tab-1') Tiền gửi
                 li
-                    a(href='#tab-2') Tiền vay
+                    a(href='#tab-2') Tiền vay + Tài trợ thương mại
                 li
-                    a(href='#tab-3') Dịch vụ trực tuyến 
+                    a(href='#tab-3') Thẻ 
                 li
-                    a(href='#tab-4') Thẻ    
+                    a(href='#tab-4') Dịch vụ trực tuyến     
                 li
-                    a(href='#tab-5') Bảo hiểm nhân thọ
-                li
-                    a(href='#tab-6') Chương trình khuyến mãi     
+                    a(href='#tab-5') Chương trình khuyến mãi
             .tab-content
                 #tab-1.panel.active
                     .wrapper-header.d-flex.align-items-center  
@@ -24,11 +22,6 @@ section.table-sec
                                 p USD: 
                                     span 100.000
                         .wrap-right.d-flex.align-items-center  
-                            .select-box.d-flex.align-items-center  
-                                .dot.green-4
-                                select
-                                    option(value='hide') Active
-                                    option(value='active') Active
                             .search-box 
                                 form(action="") 
                                     .form-group 
@@ -53,7 +46,12 @@ section.table-sec
                                             img(src="./images/icons/sort.svg", alt="")
                                 th 
                                     .title 
+                                        span Trạng thái
+                                th 
+                                    .title 
                                         span Loại tiền
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
                                 th 
                                     .title 
                                         span Số dư kế toán
@@ -70,51 +68,66 @@ section.table-sec
                                         span  
                                             img(src="./images/icons/sort.svg", alt="")
                                 th 
-                                    .title 
+                                    .title
                                         span Ngày mở
                                         span  
                                             img(src="./images/icons/sort.svg", alt="")
                                 th 
-                                    .title
-                                        span Ngày đáo hạn
-                                        span  
-                                            img(src="./images/icons/sort.svg", alt="")
-                                th 
                                     .title 
-                                        span Ngày tất toán
+                                        span Ngày đáo hạn
                                         span  
                                             img(src="./images/icons/sort.svg", alt="")
                                 th  
                                     .title 
-                                        span Kỳ hạn
+                                        span Ngày tất toán
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span  Kỳ hạn
                                         span  
                                             img(src="./images/icons/sort.svg", alt="")
                                 th 
                                     .title 
                                         span Lãi suất
-                                        span  
-                                            img(src="./images/icons/sort.svg", alt="")
                                 th 
                                     .title 
                                         span Chương trình ưu đãi
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
                                 th 
-                                    .title 
+                                    .title
                                         span Ngày GD cuối cùng
                                         span  
                                             img(src="./images/icons/sort.svg", alt="")
                                 th 
                                     .title
-                                        span Giá trị GD cao nhất 6T
+                                        span Số tiền ghi Có cao nhất 6T
                                         span  
                                             img(src="./images/icons/sort.svg", alt="")
                                 th 
-                                    .title
-                                        span Mức GD cao nhất 6T
+                                    .title 
+                                        span Số tiền ghi Nợ cao nhất 6T
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Doanh số ghi Nợ 6T
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Doanh số ghi Có 6T
                                         span  
                                             img(src="./images/icons/sort.svg", alt="")
                                 th 
                                     .title 
                                         span Người liên quan
+                                        span  
+                                            img(src="./images/icons/sort.svg", alt="")
+                                th 
+                                    .title 
+                                        span Mối quan hệ của Người liên quan
                                         span  
                                             img(src="./images/icons/sort.svg", alt="")
                             -for(i=0; i<6; i++)
@@ -135,6 +148,10 @@ section.table-sec
                                     td 
                                         input#checkbox.form-control(type="checkbox")
                                         span.form-label
+                                    td 30/07/2021
+                                    td 20,000,000.0
+                                    td 20,000,000.0
+                                    td CIF - Tên
                                     td 30/07/2021
                                     td 20,000,000.0
                                     td 20,000,000.0
@@ -688,79 +705,6 @@ section.table-sec
                                     td 20,000,000.0
                                     td 20,000,000.0
                                     td Daiichi-Life 
-                    nav.pagination-nav.d-flex.align-items-center  
-                        p Tổng số dòng: 15 (Hiển thị từ 1 đến 5)
-                        ul.pagination.d-flex.align-items-center  
-                            li.page-item
-                                a.page-link(href='#')
-                                    em.material-icons navigate_before
-                            li.page-item.active
-                                a.page-link(href='#') 1
-                            li.page-item
-                                a.page-link(href='#') 2
-                            li.page-item
-                                a.page-link(href='#') 3
-                            li.page-item
-                                a.page-link(href='#')
-                                    em.material-icons navigate_next
-
-                #tab-6.panel
-                    .wrapper-header.d-flex.align-items-center  
-                        .wrap-right.d-flex.align-items-center  
-                            .search-box 
-                                form(action="") 
-                                    .form-group 
-                                        input.form-control(type="text")
-                                        .icon
-                                            img(src="./images/icons/search-black.svg", alt="")
-                    .wrapper-body 
-                        table 
-                            tr 
-                                th 
-                                    .title
-                                        span STT
-                                th 
-                                    .title 
-                                        span Tham gia
-                                        span  
-                                            img(src="./images/icons/sort.svg", alt="")
-                                th 
-                                    .title
-                                        span Loại sản phẩm
-                                        span  
-                                            img(src="./images/icons/sort.svg", alt="")
-                                th 
-                                    .title 
-                                        span Tên chương trình
-                                        span  
-                                            img(src="./images/icons/sort.svg", alt="")
-                                th 
-                                    .title 
-                                        span Mã chương trình
-                                        span  
-                                            img(src="./images/icons/sort.svg", alt="")
-                                th 
-                                    .title 
-                                        span Ngày bắt đầu
-                                        span  
-                                            img(src="./images/icons/sort.svg", alt="")
-                                th 
-                                    .title 
-                                        span Ngày kết thúc
-                                        span  
-                                            img(src="./images/icons/sort.svg", alt="")
-                            -for(i=0; i<4; i++)
-                                tr 
-                                    td 1
-                                    td 
-                                        input#checkbox.form-control(type="checkbox")
-                                        span.form-label
-                                    td Tiền gửi
-                                    td HDBank privilege banking trải nghiệm dịch vụ thượng đỉnh
-                                    td 00270489653214
-                                    td 30/07/2021
-                                    td 30/09/2021
-                                    
                     nav.pagination-nav.d-flex.align-items-center  
                         p Tổng số dòng: 15 (Hiển thị từ 1 đến 5)
                         ul.pagination.d-flex.align-items-center  

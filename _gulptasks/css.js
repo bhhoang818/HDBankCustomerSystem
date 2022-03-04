@@ -12,10 +12,10 @@ import autoprefixer from "autoprefixer";
 
 export const sassTask = () => {
 	return src([
-			"src/components/core/_**.sass",
-			"src/components/core/**.sass",
-			"src/components/**/**.sass",
-		])
+		"src/components/core/_**.sass",
+		"src/components/core/**.sass",
+		"src/components/**/**.sass",
+	])
 		.pipe(concat("main.min.sass"))
 		.pipe(sass().on("error", sass.logError))
 		.pipe(postcss([

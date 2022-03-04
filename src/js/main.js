@@ -137,61 +137,150 @@ const tabsPanel = () => {
     }
 }
 const myChart = () => {
-    new Chart("myChart1", {
-        type: "doughnut",
-        data: {
-            datasets: [{
-                data: [18, 64, 18],
-                backgroundColor: [
-                    '#EB2629',
-                    '#FF993B',
-                    '#FFC20E'
-                ],
-            }]
-        },
-        options: {
-            cutout: 65,
-            hoverOffset: 0,
-            borderWidth: 0
-        }
-    });
-    new Chart("myChart2", {
-        type: "doughnut",
-        data: {
-            datasets: [{
-                label: 'My First Dataset',
-                data: [18, 41, 41],
-                backgroundColor: [
-                    '#7DBA00',
-                    '#EB2629',
-                    '#FFC20E'
-                ],
-            }]
-        },
-        options: {
-            cutout: 65,
-            hoverOffset: 0,
-            borderWidth: 0
-        }
-    });
+    if (($('#myChart1').length >= 1) && ($('#myChart2').length >= 1)) {
+        new Chart("myChart1", {
+            type: "doughnut",
+            data: {
+                datasets: [{
+                    data: [18, 64, 18],
+                    backgroundColor: [
+                        '#EB2629',
+                        '#FF993B',
+                        '#FFC20E'
+                    ],
+                }]
+            },
+            options: {
+                cutout: 65,
+                hoverOffset: 0,
+                borderWidth: 0
+            }
+        });
+        new Chart("myChart2", {
+            type: "doughnut",
+            data: {
+                datasets: [{
+                    label: 'My First Dataset',
+                    data: [18, 41, 41],
+                    backgroundColor: [
+                        '#7DBA00',
+                        '#EB2629',
+                        '#FFC20E'
+                    ],
+                }]
+            },
+            options: {
+                cutout: 65,
+                hoverOffset: 0,
+                borderWidth: 0
+            }
+        });
+    } else {
+        new Chart("myChart3", {
+            type: "doughnut",
+            data: {
+                datasets: [{
+                    data: [5, 15, 35, 45],
+                    backgroundColor: [
+                        '#7DBA00',
+                        '#EB2629',
+                        '#F56600',
+                        '#FFC20E'
+                    ],
+                }]
+            },
+            options: {
+                cutout: 65,
+                hoverOffset: 0,
+                borderWidth: 0
+            }
+        });
+        new Chart("myChart4", {
+            type: "doughnut",
+            data: {
+                datasets: [{
+                    data: [20, 65, 25],
+                    backgroundColor: [
+                        '#EB2629',
+                        '#F56600',
+                        '#FFC20E'
+                    ],
+                }]
+            },
+            options: {
+                cutout: 65,
+                hoverOffset: 0,
+                borderWidth: 0
+            }
+        });
+    }
 }
 const swiperInit = () => {
-    var swiper = new Swiper(".gallery-thumbnail", {
+    $(".fancybox__slide .popup-detail").each(function (index, element) {
+        var $this = $(this);
+        var top = $this.find('.gallery-top .swiper')
+        var thumb = $this.find('.gallery-thumbnail .swiper')
+        top.addClass("instance-gallery-top-" + index);
+        thumb.addClass("instance-gallery-thumbs-" + index);
+        $this.find(".gallery-top .swiper-button-prev").addClass("swiper-button-prev-" + index);
+        $this.find(".gallery-top .swiper-button-next").addClass("swiper-button-next-" + index);
+        $this.find(".gallery-top .swiper-pagination").addClass("swiper-pagination-" + index);
+        var swiper = new Swiper(".instance-gallery-thumbs-" + index, {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+            observer: true,
+            observeParents: true,
+        });
+        var swiper2 = new Swiper(".instance-gallery-top-" + index, {
+            spaceBetween: 10,
+            observer: true,
+            observeParents: true,
+            navigation: {
+                nextEl: ".swiper-button-next-" + index,
+                prevEl: ".swiper-button-prev-" + index,
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    })
+    var swiper = new Swiper(".gallery-thumbnail .swiper", {
         spaceBetween: 10,
         slidesPerView: 4,
         freeMode: true,
         watchSlidesProgress: true,
+        observer: true,
+        observeParents: true,
     });
-    var swiper2 = new Swiper(".gallery-top", {
+    var swiper2 = new Swiper(".gallery-top .swiper", {
         spaceBetween: 10,
+        observer: true,
+        observeParents: true,
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".gallery-top .swiper-button-next",
+            prevEl: ".gallery-top .swiper-button-prev",
         },
         thumbs: {
             swiper: swiper,
         },
     });
+}
+
+const progressBar = () => {
+    var bars = document.querySelectorAll('.progress > .progress-bar');
+    console.clear();
+
+    setInterval(function () {
+        bars.forEach(function (bar) {
+            var getWidth = parseFloat(bar.dataset.progress);
+
+            for (var i = 0; i < getWidth; i++) {
+                bar.style.width = i + '%';
+            }
+        });
+    }, 500);
 }
 $(document).ready(function () {
     startMarquee();
@@ -202,10 +291,5 @@ $(document).ready(function () {
     tabsPanel();
     myChart();
     swiperInit();
-    $("#progressbar-individualCustomer").progressbar({
-        value: 3
-    });
-    $("#progressbar-bussinessCustomer").progressbar({
-        value: 4
-    });
+    progressBar();
 })

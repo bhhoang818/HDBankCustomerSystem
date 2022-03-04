@@ -1,0 +1,92 @@
+#popup-detail-loan.popup-detail.popup-transaction
+    .popup-header.wide
+        h2.title DIENGIAI_TSDB:PT VAN CHUYEN, NHA O BEN VAY, MAY MOC THIET BI, ....
+    .popup-main
+        .wrap-table
+            .wrap-table
+                table 
+                    tr 
+                        th 
+                            .title 
+                                span STT
+                        th 
+                            .title 
+                                span Số ref
+                                span 
+                                    img(src="./images/icons/sort.svg", alt="")
+                        th 
+                            .title 
+                                span Tên TSBĐ
+                                span 
+                                    img(src="./images/icons/sort.svg", alt="")
+                        th 
+                            .title 
+                                span Loại tiền
+                                span 
+                                    img(src="./images/icons/sort.svg", alt="")
+                        th 
+                            .title 
+                                span Giá trị TSBĐ 
+                                span 
+                                    img(src="./images/icons/sort.svg", alt="")
+                        th 
+                            .title 
+                                span Giá trị các khoản vay liên quan
+                                span 
+                                    img(src="./images/icons/sort.svg", alt="")
+                        th 
+                            .title 
+                                span Người liên quan
+                                span 
+                                    img(src="./images/icons/sort.svg", alt="")
+                        th 
+                            .title 
+                                span Mối quan hệ của Người liên quan đối với TSBĐ
+                                span 
+                                    img(src="./images/icons/sort.svg", alt="")
+                    -for(i=0; i<5; i++)
+                        tr
+                            td 1
+                            td 1234560
+                            td Tiền gửi
+                            td VND
+                            td 20,000,000.0
+                            td 20,000,000.0
+                            td Nguyễn Văn A
+                            td Đồng chủ TK
+            nav.pagination-nav.d-flex.align-items-center.mt-3
+                ul.pagination.d-flex.align-items-center.ms-auto  
+                    li.page-item
+                        a.page-link(href='#')
+                            em.material-icons navigate_before
+                    li.page-item.active
+                        a.page-link(href='#') 1
+                    li.page-item
+                        a.page-link(href='#') 2
+                    li.page-item
+                        a.page-link(href='#') 3
+                    li.page-item
+                        a.page-link(href='#')
+                            em.material-icons navigate_next
+    .button-bottom
+            button.btn.btn-handle.gray(data-fancybox-close) Đóng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
