@@ -2,6 +2,19 @@ section.general-page
     .wrapper-container
         .wrapper-left 
             h2.section-title Tổng quan yêu cầu xử lý
+            .chart-wrapper.d-flex.align-items-center 
+                .chart-content
+                    canvas#myChart5(style="width:100%;max-width:196px")
+                ul.list-chart.d-flex.align-items-center 
+                    li.d-flex.align-items-center 
+                        span.dot.yellow
+                        span Chờ xử lý
+                    li.d-flex.align-items-center 
+                        span.dot.green
+                        span Đã xử lý
+                    li.d-flex.align-items-center 
+                        span.dot.red
+                        span Từ chối       
         .wrapper-right
             .wrapper-right_header.d-flex.align-content-center.justify-content-between
                 .wrapper-right_header--left
@@ -13,13 +26,13 @@ section.general-page
                     .img 
                         img(src="./images/icons/earth.svg", alt="")
             .wrapper-right_body
-                .progressbar-view
-                    .progressbar
-                        label(for="") Khách hàng Cá nhân
-                        #progressbar-individualCustomer
+                .progressbar-view.d-flex.align-items-center
+                    label(for="") Khách hàng Cá nhân
+                    .progress
+                        .progress-bar.yellow(data-progress='4' style="width: 0;")
                     span.count 03/100
-                .progressbar-view
-                    .progressbar
-                        label(for="") Khách hàng Doanh nghiệp
-                        #progressbar-bussinessCustomer
+                .progressbar-view.d-flex.align-items-center
+                    label(for="") Khách hàng Doanh nghiệp
+                    .progress
+                        .progress-bar.orange(data-progress='5' style="width: 0;")
                     span.count 04/100

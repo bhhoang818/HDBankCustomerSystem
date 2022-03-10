@@ -11,6 +11,16 @@
             border: 0.5px solid $neutral-2
             border-radius: 8px
             padding: r(16px)
+            display: inline-grid
+            .chart-wrapper
+                flex-direction: column
+                .list-chart
+                    margin-top: 16px
+                    li
+                        .dot
+                            margin-right: 10px
+                    li + li
+                        margin-left: 16px
         .wrapper-right
             width: calc( 63.59375% - 12px )
             background: $white
@@ -37,7 +47,8 @@
                             color: $white
                 &--right
                     margin-bottom: -16px
-
+                @media screen and ( max-width: 1280px )
+                    padding: r(16px) r(0px) r(16px) r(16px)
             &_body
                 padding: r(16px)
                 padding-top: 46px
@@ -45,45 +56,32 @@
                 .progressbar-view
                     position: relative
                     padding: 28px 0
-                    .progressbar
-                        width: 100%
-                        display: flex
-                        align-items: center
-                        justify-content: space-between
-                        label
-                            white-space: nowrap
-                            font-weight: 600
-                            font-size: 16px
-                            color: $neutral-4
-                        #progressbar-individualCustomer,
-                        #progressbar-bussinessCustomer
-                            width: 810px
-                            height: 8px
-                            background: $neutral-1
-                            .ui-progressbar-value
-                                height: 100%
-                            @media screen and ( max-width: 1700.98px )
-                                width: 710px
-                            @media screen and ( max-width: 1500.98px )
-                                width: 610px
-                            @media screen and ( max-width: 1400.98px )
-                                width: 510px
-                            @media screen and ( max-width: 1280.98px )
-                                width: 410px
-                            @media screen and ( max-width: 1024.98px )
-                                width: 310px
-                        #progressbar-individualCustomer
-                            .ui-progressbar-value
-                                background: $yellow-brand
-                        #progressbar-bussinessCustomer
-                            .ui-progressbar-value
-                                background: $orange-4
+                    label
+                        white-space: nowrap
+                        font-weight: 600
+                        font-size: 16px
+                        color: $neutral-4
+                    .progress
+                        width: 807px
+                        margin-left: auto
+                        background: #EAEEF2
+                        height: 8px
+                        border-radius: 0
+                        @media screen and ( max-width: 1600px )
+                            width: 540px
+                        @media screen and ( max-width: 1280.98px )
+                            width: 340px
                     .count
                         position: absolute
                         top: 0
                         right: 0
                         font-size: 14px
                         color: $brand-grey
+                    @media screen and ( max-width: 600.98px )
+                        flex-direction: column
+                        .progress
+                            width: 100%
+                            margin-top: 10px
                 .progressbar-view + .progressbar-view
                     border-top: 1px solid $neutral-2
                     border-bottom: 1px solid $neutral-2
@@ -92,3 +90,12 @@
             flex: 0 0 auto
             border: 0.5px solid $neutral-2
             border-radius: 8px
+    @media screen and ( max-width: 1240.98px )
+        padding: 0 12px
+        .wrapper-container
+            .wrapper-left
+                width: 100%
+                margin-bottom: 16px
+            .wrapper-right
+                margin-left: 0
+                width: 100%
