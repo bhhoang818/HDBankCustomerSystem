@@ -88,6 +88,10 @@ const handleClickSlide = () => {
     $('#overlay').on('click', () => {
         $('#overlay').removeClass('active');
         $('header').find('.notification-wrapper').slideUp();
+    });
+    $('.pending-request-custommer').find('.wrapper-left_title').on('click', () => {
+        $('.pending-request-custommer').find('.info-wrapper').slideToggle();
+        $('.pending-request-custommer').find('.wrapper-left_title').toggleClass('active');
     })
 }
 
