@@ -6,70 +6,7 @@
             flex: 0 0 25%
             width: 25%
             .info-wrapper
-                width: 100%
                 height: 100%
-                padding: 16px 16px 24px 16px
-                background: #FFFFFF
-                box-shadow: 0px 2px 16px rgba(33, 43, 54, 0.05)
-                border-radius: 8px
-                .info-general
-                    margin-bottom: 16px
-                    .img
-                        width: 178px
-                        height: 178px
-                        border-radius: 50%
-                        margin: 0 auto 16px auto
-                        img
-                            width: 100%
-                            height: 100%
-                            object-fit: cover
-                    .customer-name
-                        p
-                            text-align: center
-                            font-weight: bold
-                            font-size: 20px
-                            color: $neutral-5
-                    .customer-core
-                        display: flex
-                        align-items: center
-                        justify-content: center
-                        p
-                            font-size: 16px
-                            color: $neutral-4
-                            margin-right: 4px
-                        span
-                            padding: 0px 8px
-                            background: $yellow-brand
-                            border-radius: 4px
-                .info-detail
-                    max-height: 325px
-                    overflow-y: auto
-                    margin-bottom: 16px
-                    table
-                        width: 100%
-                        tr
-                            td
-                                width: 50%
-                                padding: 8px 0
-                                vertical-align: top
-                                &:first-child
-                                    font-weight: 600
-                                    color: $neutral-4
-                                &:last-child
-                                    color: $neutral-4
-                                    span,
-                                    a
-                                        font-weight: 600
-                                        color: $blue-4
-                .btn-login
-                    display: flex
-                    justify-content: center
-                    background: linear-gradient(90deg, #F7A30A 0%, #FCC049 100%)
-                    border-radius: 6px
-
-                    em
-                        margin-right: 12px
-
         .wrap-right
             width: 75%
             flex: 0 0 75%
@@ -149,6 +86,14 @@
                                                 margin-right: 10px
                                             span
                                                 color: $neutral-4
+                                @media screen and ( max-width: 575.98px )
+                                    height: auto
+                                    .title
+                                        margin-bottom: 0
+                                    .chart-wrapper
+                                        flex-direction: column
+                                        .list-chart
+                                            margin-left: 0
 
                                 .count-number
                                     text-align: right
@@ -231,7 +176,7 @@
                         .wrapper-content
                             width: 100%
                             .left-box
-                                width: 33.54792560801144%
+                                width: 40%
                                 border-radius: 8px
                                 background: #FFF0E5
                                 .content-progress
@@ -240,8 +185,7 @@
                                     flex-wrap: wrap
                                     justify-content: center
                                     li
-                                        flex: 0 0 1
-                                        width: 117px
+                                        flex: 1
                                         text-align: center
                                         p
                                             text-align: center
@@ -269,7 +213,7 @@
                                         li + li
                                             margin-left: 16px
                             .right-box
-                                width: calc( 100% - 33.54792560801144% )
+                                width: 60%
                                 margin-left: 16px
                                 border: 1px solid #B6BEC8
                                 box-sizing: border-box
@@ -325,6 +269,10 @@
                                                     color: #7DBA00
                                     li + li
                                         margin-left: 82px
+                                @media screen and ( max-width: 1600.98px )
+                                    .list-items
+                                        li + li
+                                            margin-left: 32px
                                 @media screen and ( max-width: 1280.98px )
                                     width: 50%
                                     flex-direction: column
@@ -352,7 +300,6 @@
                                 padding: 16px 16px 12px 16px
                                 .title
                                     p
-                                        padding-bottom: 24px
                                         font-weight: bold
                                         font-size: 20px
                                         color: #212B36
@@ -362,6 +309,7 @@
                                         align-items: center
                                         justify-content: center
                                         padding: 12px 16px
+                                        margin-top: 24px
                                 @media screen and ( max-width: 1280.98px )
                                     .title
                                         p
@@ -369,7 +317,7 @@
                                         .btn-login
                                             padding: 4px 16px
 
-        @media screen and ( max-width: 1280.98px )
+        @media screen and ( max-width: 1440.98px )
             .wrap-left
                 .info-wrapper
                     .info-detail
@@ -401,3 +349,69 @@
                                             font-size: 14px
                                         a
                                             font-size: 14px
+        @media screen and ( max-width: 1024.98px )
+            .wrap-left,
+            .wrap-right
+                flex: 0 0 100%
+                width: 100%
+            .wrap-left
+                padding-right: 0
+                margin-bottom: 16px
+            .wrap-right
+                &_container
+                    &--content
+                        .content-top
+                            .wrap-left,
+                            .wrap-right
+                                flex: 0 0 50%
+                                width: 50%
+                        .content-bottom
+                            .wrapper-content
+                                flex-wrap: wrap
+                                .left-box,
+                                .right-box
+                                    width: 100%
+                                    height: auto
+                                    margin: 0
+                                .right-box
+                                    margin-top: 16px
+        @media screen and ( max-width: 992.98px )
+            .wrap-right
+                &_container
+                    &--content
+                        .content-top
+                            .wrap-left,
+                            .wrap-right
+                                flex: 0 0 100%
+                                width: 100%
+                        .content-bottom
+                            .list-form-check
+                                .form-check
+                                    flex: 0 0 50%
+                                    width: 50%
+                                    margin-bottom: 10px
+                                    &:last-child
+                                        padding: 0 5px
+                                        padding-left: 0
+        @media screen and ( max-width: 575.98px )
+            .wrap-right
+                &_container
+                    &--content
+                        .content-bottom
+                            .list-form-check
+                                .form-check
+                                    flex: 0 0 100%
+                                    width: 100%
+                                    padding: 4px 0
+                                    margin-bottom: 8px
+                                    &:last-child
+                                        padding: 0
+                            .wrapper-content
+                                .left-box
+                                    .content-progress
+                                        flex-wrap: wrap
+                                        li
+                                            flex: 0 0 100%
+                                            width: 100%
+                                        li + li
+                                            margin-left: 0

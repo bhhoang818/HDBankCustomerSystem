@@ -88,6 +88,10 @@ const handleClickSlide = () => {
     $('#overlay').on('click', () => {
         $('#overlay').removeClass('active');
         $('header').find('.notification-wrapper').slideUp();
+    });
+    $('.pending-request-custommer').find('.wrapper-left_title').on('click', () => {
+        $('.pending-request-custommer').find('.info-wrapper').slideToggle();
+        $('.pending-request-custommer').find('.wrapper-left_title').toggleClass('active');
     })
 }
 
@@ -175,7 +179,8 @@ const myChart = () => {
                 borderWidth: 0
             }
         });
-    } else {
+    }
+    if (($('#myChart3').length >= 1) && ($('#myChart4').length >= 1)) {
         new Chart("myChart3", {
             type: "doughnut",
             data: {
@@ -211,6 +216,33 @@ const myChart = () => {
                 cutout: 65,
                 hoverOffset: 0,
                 borderWidth: 0
+            }
+        });
+
+    }
+    if (($('#myChart5').length >= 1)) {
+        new Chart("myChart5", {
+            type: "doughnut",
+            labels: [
+                'Red',
+                'Blue',
+                'Yellow'
+            ],
+            data: {
+                datasets: [{
+                    label: '',
+                    data: [15, 65, 20],
+                    backgroundColor: [
+                        '#EB2629',
+                        '#7DBA00',
+                        '#FFDF80'
+                    ],
+                }]
+            },
+            options: {
+                cutout: 65,
+                hoverOffset: 0,
+                borderWidth: 0,
             }
         });
     }
@@ -270,17 +302,35 @@ const swiperInit = () => {
 
 const progressBar = () => {
     var bars = document.querySelectorAll('.progress > .progress-bar');
-    console.clear();
-
     setInterval(function () {
         bars.forEach(function (bar) {
             var getWidth = parseFloat(bar.dataset.progress);
-
             for (var i = 0; i < getWidth; i++) {
                 bar.style.width = i + '%';
             }
         });
     }, 500);
+}
+const accordian = () => {
+    $(".navigation-list_item__title").on("click", function (e) {
+        let $this = $(this);
+        e.preventDefault();
+        if ($this.parent().next().hasClass("show")) {
+            $this.parent().next().removeClass("show");
+            $this.parent().next().slideUp(350);
+            $this.closest('.navigation-list_item').removeClass("active");
+        } else {
+            $this.parent().parents().find(".navigation-sub").removeClass("show");
+            $this.parent().parents().find(".navigation-sub").slideUp(350);
+            $this.parent().parents('.navigation-list').find(".navigation-list_item").removeClass("active");
+            $this.parent().next().toggleClass("show");
+            $this.parent().next().slideDown(350);
+            $this.parents("li").addClass("active");
+        }
+    });
+    if ($(".navigation-list .navigation-list_item").hasClass("active")) {
+        $(".navigation-list .navigation-list_item.active").find(".navigation-sub").slideDown(350);
+    }
 }
 $(document).ready(function () {
     startMarquee();
@@ -292,4 +342,5 @@ $(document).ready(function () {
     myChart();
     swiperInit();
     progressBar();
+    accordian();
 })

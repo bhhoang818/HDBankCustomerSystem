@@ -1,0 +1,220 @@
+section.section-main.pending-request-custommer
+    .wrapper-container.d-flex 
+        .wrapper-left 
+            .wrapper-left_title
+                p THÔNG TIN KHÁCH HÀNG ĐANG XỬ LÝ
+                em.material-icons keyboard_arrow_down
+            .info-wrapper
+                .info-general.d-flex.align-items-center 
+                    .img
+                        img(src="./images/info-custome/avatar-bussiness.jpg", alt="")
+                    .content
+                        .customer-name 
+                            p Nguyễn Anh Khoa
+                        .customer-core 
+                            p Mã Khách hàng:
+                            span 00169235
+                .info-detail 
+                                table 
+                                    tr 
+                                        td Mã số thuế:
+                                        td 012345678923
+                                    tr 
+                                        td Giấy chứng nhận ĐKKD:
+                                        td 
+                                            a(href="javascript:;" data-fancybox="info-popu-1" data-src="#popup-infor" data-touch="false")  Xem hình ảnh
+                                    tr 
+                                        td Ngành nghề KD:
+                                        td Vận tải
+                                    tr 
+                                        td Loại hình DN:
+                                        td Công ty TNHH
+                                    tr 
+                                        td Loại KH:
+                                        td VIP
+                                    tr 
+                                        td Người đại diện:
+                                        td Trần Anh Vũ
+                                    tr 
+                                        td Số điện thoại:
+                                        td *******999
+                                    tr 
+                                        td Email:
+                                        td anv@gmail.com
+                                    tr 
+                                        td Giấy tờ khác:
+                                        td 
+                                            a(href="javascript:;")  Chi tiết
+                                    tr 
+                                        td Trình độ học vấn:
+                                        td Đại học
+                                    tr 
+                                        td Nghề nghiêp:
+                                        td Giám đốc Marketing
+                                    tr 
+                                        td Tình trạng hôn nhân:
+                                        td Đã kết hôn
+                                    tr 
+                                        td Đơn vị mở CIF:
+                                        td --
+                                    tr 
+                                        td Ngày mở CIF:
+                                        td 12/10/2000
+        
+            include ./sidebar.pug
+        .wrapper-right 
+            .wrapper-right_header.d-flex.align-items-center.justify-content-between 
+                form.wrapper-right_header--left(action="")
+                    .form-group 
+                        button
+                            img(src="./images/icons/search-gray.svg", alt="")
+                        input.form-control(type="text" placeholder='Tìm kiếm task')
+                .wrapper-right_header--right.d-flex.align-items-center
+                    .wrapper-right_header--right__select
+                        select#year
+                            option(value='hide') Năm
+                            option(value='2022') 2022
+                            option(value='2021') 2021
+                            option(value='2020') 2020
+                            option(value='2019') 2019
+                            option(value='2018') 2018
+                            option(value='2017') 2017
+                            option(value='2016') 2016
+                            option(value='2015') 2015
+                            option(value='2014') 2014
+                            option(value='2013') 2013
+                            option(value='2012') 2012
+                            option(value='2011') 2011
+                            option(value='2010') 2010
+                        select#mounth
+                            option(value='hide') Tháng
+                            option(value='january') Tháng 1
+                            option(value='february') Tháng 2
+                            option(value='march') Tháng 3
+                            option(value='april') Tháng 4
+                            option(value='may') Tháng 5
+                            option(value='june') Tháng 6
+                            option(value='july') Tháng 7
+                            option(value='august') Tháng 8
+                            option(value='september') Tháng 9
+                            option(value='october') Tháng 10
+                            option(value='november') Tháng 11
+                            option(value='december') Tháng 12
+                    .wrapper-right_header--right__sort 
+                        a.active(href="") Tháng 
+                        a(href="") Năm  
+            .wrapper-right_body
+                .wrap-table 
+                    table 
+                        tr(data-fancybox="popup" data-src="#popup-detail")
+                            td 
+                                span.dot.green 
+                            td 
+                                p STK 1 tháng đến hạn, STK đảm bảo cho khoản vay của doanh nghiệp
+                            td 
+                                .status.yellow 
+                                    span Chưa xử lý
+                            td
+                                .date-time 
+                                    span 03/04/2022
+                            td 
+                                .user-avatar 
+                                    img(src="./images/icons/avatar.png", alt="")
+                        tr 
+                            td 
+                                span.dot.yellow 
+                            td 
+                                p STK 1 tháng đến hạn, STK đảm bảo cho khoản vay của doanh nghiệp, đã báo chuyên viên KHDN Lương Tiến Thạnh. Công ty sẽ chuyển tiền về thanh...
+                            td 
+                                .status.yellow 
+                                    span Chưa xử lý
+                            td
+                                .date-time 
+                                    span 03/04/2022
+                            td 
+                                .user-avatar 
+                                    img(src="./images/icons/avatar.svg", alt="")
+                        tr 
+                            td 
+                                span.dot.yellow 
+                            td 
+                                p STK 1 tháng đến hạn, STK đảm bảo cho khoản vay của doanh nghiệp
+                            td 
+                                .status.yellow 
+                                    span Chưa xử lý
+                            td
+                                .date-time 
+                                    span 03/04/2022
+                            td 
+                                .user-avatar 
+                                    img(src="./images/icons/avatar.svg", alt="")
+                        tr 
+                            td 
+                                span.dot.green 
+                            td 
+                                p STK 1 tháng đến hạn, STK đảm bảo cho khoản vay của doanh nghiệp, đã báo chuyên viên KHDN Lương Tiến Thạnh. Công ty sẽ chuyển tiền về thanh...
+                            td 
+                                .status.yellow 
+                                    span Chưa xử lý
+                            td
+                                .date-time 
+                                    span 03/04/2022
+                            td 
+                                .user-avatar 
+                                    img(src="./images/icons/avatar.svg", alt="")
+                        tr 
+                            td 
+                                span.dot.red 
+                            td 
+                                p Chạy danh sách KH đến hạn sổ tiết kiệm trên KM
+                            td 
+                                .status.yellow 
+                                    span Chưa xử lý
+                            td
+                                .date-time 
+                                    span 03/04/2022
+                            td 
+                                .user-avatar 
+                                    img(src="./images/icons/avatar.png", alt="")
+                        tr 
+                            td 
+                                span.dot.red 
+                            td 
+                                p STK 1 tháng đến hạn, STK đảm bảo cho khoản vay của doanh nghiệp, đã báo chuyên viên KHDN Lương Tiến Thạnh
+                            td 
+                                .status.yellow 
+                                    span Chưa xử lý
+                            td
+                                .date-time 
+                                    span 03/04/2022
+                            td 
+                                .user-avatar 
+                                    img(src="./images/icons/avatar.png", alt="")
+                        tr 
+                            td 
+                                span.dot.green 
+                            td 
+                                p STK 1 tháng đến hạn, STK đảm bảo cho khoản vay của doanh nghiệp
+                            td 
+                                .status.yellow 
+                                    span Chưa xử lý
+                            td
+                                .date-time 
+                                    span 03/04/2022
+                            td 
+                                .user-avatar 
+                                    img(src="./images/icons/avatar.png", alt="")
+                        tr 
+                            td 
+                                span.dot.green 
+                            td 
+                                p STK 1 tháng đến hạn, STK đảm bảo cho khoản vay của doanh nghiệp
+                            td 
+                                .status.blue 
+                                    span Bỏ sung hồ sơ
+                            td
+                                .date-time 
+                                    span 03/04/2022
+                            td 
+                                .user-avatar 
+                                    img(src="./images/icons/avatar.png", alt="")

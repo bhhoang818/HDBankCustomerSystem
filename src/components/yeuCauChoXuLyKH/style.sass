@@ -1,0 +1,39 @@
+.pending-request-custommer
+    .wrapper-container
+        .wrapper-left
+            padding-right: 16px
+            &_title
+                display: flex
+                align-items: center
+                justify-content: space-between
+                background: #F7B512
+                border-radius: 4px
+                padding: 8px 16px
+                cursor: pointer
+                margin-bottom: 16px
+                p,
+                em
+                    color: $white
+                    font-size: 1rem
+                    font-weight: 700
+                    transition: all .3s
+                &.active
+                    em
+                        transform: rotate(180deg)
+            .info-wrapper
+                padding: 0
+                box-shadow: unset
+                border-radius: 0
+                background: $trans
+                .info-general
+                    .img
+                        margin: 0
+                        width: 60px
+                        height: 60px
+                        border-radius: 50%
+                        img
+                            border-radius: 50%
+            .side-bar
+                &_body
+                    &--bottom
+                        margin-top: 30px
